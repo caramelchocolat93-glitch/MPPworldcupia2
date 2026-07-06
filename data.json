@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "brand": "PREDIKT",
+    "tagline": "Des décisions éclairées par l'IA.",
+    "last_updated": "2026-07-06 14:00",
+    "source": "PREDIKT static sync v8",
+    "sync_mode": "auto-refresh ready"
+  },
+  "matches": [
+    {
+      "id": "arg-egy",
+      "date": "07/07",
+      "time": "18:00",
+      "stage": "8e de finale",
+      "match": "Argentine - Égypte",
+      "pick": "Argentine",
+      "score": "2-0",
+      "alt": "3-1",
+      "conf": 78,
+      "rel": 8.4,
+      "risk": "Faible",
+      "action": "JOUER",
+      "type": "SAFE",
+      "qualif": "Argentine",
+      "p": [
+        69,
+        19,
+        12
+      ],
+      "why": "Pick le plus propre : avantage net en expérience, qualité individuelle et contrôle du tempo.",
+      "signals": [
+        "Écart de niveau",
+        "Expérience",
+        "Contrôle",
+        "Priorité MPP"
+      ]
+    },
+    {
+      "id": "fra-mar",
+      "date": "09/07",
+      "time": "22:00",
+      "stage": "Quart de finale",
+      "match": "France - Maroc",
+      "pick": "France",
+      "score": "2-1",
+      "alt": "1-0",
+      "conf": 72,
+      "rel": 7.6,
+      "risk": "Moyen",
+      "action": "JOUER",
+      "type": "CORE",
+      "qualif": "France",
+      "p": [
+        58,
+        24,
+        18
+      ],
+      "why": "France favorite, mais Maroc dangereux. Score serré conseillé.",
+      "signals": [
+        "Favori solide",
+        "Bloc marocain",
+        "Transitions",
+        "Score serré"
+      ]
+    },
+    {
+      "id": "nor-eng",
+      "date": "11/07",
+      "time": "23:00",
+      "stage": "Quart de finale",
+      "match": "Norvège - Angleterre",
+      "pick": "Angleterre",
+      "score": "1-2",
+      "alt": "2-2",
+      "conf": 60,
+      "rel": 6.4,
+      "risk": "Moyen+",
+      "action": "PRUDENCE",
+      "type": "BALANCED",
+      "qualif": "Angleterre",
+      "p": [
+        30,
+        27,
+        43
+      ],
+      "why": "Angleterre plus complète, mais Norvège très dangereuse.",
+      "signals": [
+        "Haaland",
+        "Collectif anglais",
+        "Prolongation",
+        "Volatil"
+      ]
+    },
+    {
+      "id": "usa-bel",
+      "date": "07/07",
+      "time": "02:00",
+      "stage": "8e de finale",
+      "match": "États-Unis - Belgique",
+      "pick": "États-Unis",
+      "score": "2-1",
+      "alt": "1-1",
+      "conf": 59,
+      "rel": 6.1,
+      "risk": "Moyen+",
+      "action": "REMONTADA",
+      "type": "VALUE",
+      "qualif": "États-Unis",
+      "p": [
+        43,
+        25,
+        32
+      ],
+      "why": "Value pick intéressant pour se différencier. Belgique dangereuse.",
+      "signals": [
+        "Value",
+        "Contexte USA",
+        "Match ouvert",
+        "Différenciation"
+      ]
+    },
+    {
+      "id": "por-esp",
+      "date": "06/07",
+      "time": "21:00",
+      "stage": "8e de finale",
+      "match": "Portugal - Espagne",
+      "pick": "Espagne",
+      "score": "1-2",
+      "alt": "1-1",
+      "conf": 56,
+      "rel": 5.8,
+      "risk": "Élevé",
+      "action": "ÉVITER SAFE",
+      "type": "TRAP",
+      "qualif": "Espagne",
+      "p": [
+        32,
+        27,
+        41
+      ],
+      "why": "Espagne légèrement devant, mais marge très faible.",
+      "signals": [
+        "Piège",
+        "Risque nul",
+        "Marge faible",
+        "Volatil"
+      ]
+    },
+    {
+      "id": "sui-col",
+      "date": "07/07",
+      "time": "22:00",
+      "stage": "8e de finale",
+      "match": "Suisse - Colombie",
+      "pick": "Colombie",
+      "score": "1-2",
+      "alt": "1-1",
+      "conf": 54,
+      "rel": 5.2,
+      "risk": "Élevé",
+      "action": "ÉVITER SAFE",
+      "type": "TRAP",
+      "qualif": "Colombie",
+      "p": [
+        35,
+        28,
+        37
+      ],
+      "why": "Match très équilibré. Risque de prolongation élevé.",
+      "signals": [
+        "Équilibré",
+        "Suisse solide",
+        "Colombie explosive",
+        "Prolongation"
+      ]
+    },
+    {
+      "id": "qf1",
+      "date": "10/07",
+      "time": "21:00",
+      "stage": "Quart de finale",
+      "match": "Vainqueur POR/ESP - Vainqueur USA/BEL",
+      "pick": "À attendre",
+      "score": "—",
+      "alt": "—",
+      "conf": 0,
+      "rel": 0,
+      "risk": "À attendre",
+      "action": "ATTENDRE",
+      "type": "WAIT",
+      "qualif": "À confirmer",
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "why": "Qualifiés inconnus. Ne pas verrouiller.",
+      "signals": [
+        "Qualifiés inconnus",
+        "À recalculer"
+      ]
+    },
+    {
+      "id": "qf2",
+      "date": "12/07",
+      "time": "03:00",
+      "stage": "Quart de finale",
+      "match": "Vainqueur ARG/EGY - Vainqueur SUI/COL",
+      "pick": "Argentine probable",
+      "score": "2-1",
+      "alt": "2-0",
+      "conf": 66,
+      "rel": 6.8,
+      "risk": "À confirmer",
+      "action": "SOUS CONDITION",
+      "type": "BRACKET",
+      "qualif": "Argentine probable",
+      "p": [
+        52,
+        25,
+        23
+      ],
+      "why": "Si l’Argentine passe, elle sera favorite.",
+      "signals": [
+        "Conditionnel",
+        "Argentine favorite",
+        "À confirmer"
+      ]
+    }
+  ]
+}

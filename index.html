@@ -1,30 +1,36 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>World Cup AI Pro V7</title><link rel="stylesheet" href="styles.css"/></head><body>
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>PREDIKT V8</title><link rel="stylesheet" href="styles.css"/></head><body>
 <div class="app">
 <aside class="sidebar">
-  <div class="brand"><div class="logo">WAI</div><div><b>World Cup AI</b><span>Pro Terminal</span></div></div>
+  <div class="brand"><div class="logo">P</div><div><b>PREDIKT</b><span>Des décisions éclairées par l'IA.</span></div></div>
   <nav>
-    <button class="nav active" data-view="dashboard" onclick="setView('dashboard')">Dashboard</button>
-    <button class="nav" data-view="picks" onclick="setView('picks')">Pronostics MPP</button>
-    <button class="nav" data-view="matches" onclick="setView('matches')">Match Board</button>
-    <button class="nav" data-view="strategy" onclick="setView('strategy')">Stratégie</button>
+    <button class="nav active" data-view="dashboard" onclick="setView('dashboard')">Centre de décision</button>
+    <button class="nav" data-view="picks" onclick="setView('picks')">Recommandations IA</button>
+    <button class="nav" data-view="matches" onclick="setView('matches')">Match Center</button>
+    <button class="nav" data-view="sync" onclick="setView('sync')">Synchronisation</button>
   </nav>
-  <div class="side-card"><span>Mode</span><select id="mode" onchange="render()"><option value="balanced">Équilibré</option><option value="safe">Safe</option><option value="comeback">Remontada</option></select></div>
+  <div class="side-card"><span>Mode stratégique</span><select id="mode" onchange="render()"><option value="balanced">Équilibré</option><option value="safe">Safe</option><option value="comeback">Remontada</option></select></div>
 </aside>
+
 <main class="main">
   <header class="top">
-    <div><span class="eyebrow">Executive MPP Platform</span><h1 id="pageTitle">Dashboard</h1><p id="pageSubtitle">La décision utile, sans bruit.</p></div>
-    <button onclick="copyAll()">Copier les pronos MPP</button>
+    <div><span class="eyebrow">PREDIKT Intelligence Platform</span><h1 id="pageTitle">Centre de décision</h1><p id="pageSubtitle">Chargement...</p></div>
+    <div class="top-actions"><button class="ghost" onclick="syncData(true)">Synchroniser</button><button onclick="copyAll()">Copier MPP</button></div>
   </header>
+
   <section id="dashboard" class="view active">
     <div class="hero-grid">
       <div class="hero panel"><span class="eyebrow">Action immédiate</span><h2>Les picks à mettre maintenant.</h2><div id="actionCards" class="action-cards"></div></div>
       <div id="prime" class="prime panel"></div>
     </div>
+    <div class="sync-banner"><b id="syncStatus">Synchronisation active</b><span id="lastSync">Dernière mise à jour : —</span></div>
     <div class="kpis"><div><span>Matchs</span><b id="k1"></b></div><div><span>À jouer</span><b id="k2"></b></div><div><span>Safe</span><b id="k3"></b></div><div><span>Risques</span><b id="k4"></b></div></div>
     <div class="two-col"><div class="panel"><span class="eyebrow">Top 5</span><div id="top5"></div></div><div class="panel"><span class="eyebrow">Alertes</span><div id="alerts"></div></div></div>
   </section>
-  <section id="picks" class="view"><div class="panel"><div class="panel-head"><div><span class="eyebrow">Décision MPP</span><h2>Tableau des pronostics</h2></div><input id="searchPicks" placeholder="Recherche..." oninput="render()"/></div><div id="decisionTable" class="decision-table"></div></div></section>
-  <section id="matches" class="view"><div class="panel"><span class="eyebrow">Match Board</span><h2>Tous les matchs détaillés</h2><div id="matchRows"></div></div></section>
-  <section id="strategy" class="view"><div class="strategy-grid"><div class="panel big"><span class="eyebrow">Stratégie recommandée</span><h2 id="strategyTitle"></h2><p id="strategyText"></p><div id="strategyBlocks" class="strategy-blocks"></div></div><div class="panel"><span class="eyebrow">Règle MPP</span><h2>Ne joue pas tout.</h2><p>Le but n’est pas de prédire chaque match, mais de choisir les bons écarts au bon moment.</p></div></div></section>
+
+  <section id="picks" class="view"><div class="panel"><div class="panel-head"><div><span class="eyebrow">Décision MPP</span><h2>Tableau des recommandations</h2></div><input id="searchPicks" placeholder="Recherche..." oninput="render()"/></div><div id="decisionTable" class="decision-table"></div></div></section>
+
+  <section id="matches" class="view"><div class="panel"><span class="eyebrow">Match Center</span><h2>Tous les matchs détaillés</h2><div id="matchRows"></div></div></section>
+
+  <section id="sync" class="view"><div class="panel big-sync"><span class="eyebrow">V8 Auto Sync</span><h2>Données prêtes pour l’actualisation.</h2><p>Cette version recharge automatiquement le fichier <b>data.json</b> toutes les 5 minutes et à chaque ouverture de l’application. La V9 branchera ce flux sur une vraie API football/backend.</p><div class="sync-grid"><div><b id="syncFileStatus">—</b><span>État du fichier</span></div><div><b id="syncTime">—</b><span>Dernier chargement</span></div><div><b>5 min</b><span>Auto refresh</span></div></div><button onclick="syncData(true)">Forcer la synchronisation</button></div></section>
 </main>
 </div><script src="app.js"></script></body></html>
