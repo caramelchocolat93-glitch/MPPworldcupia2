@@ -3,69 +3,104 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>World Cup AI PRO — V2</title>
+  <title>World Cup AI PRO — V3</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
   <main class="app">
-    <section class="hero">
-      <div>
-        <span class="eyebrow">Sprint 1 livré · V2</span>
-        <h1>World Cup AI PRO</h1>
-        <p>L’assistant MPP qui trie les vrais picks, les value bets et les matchs à éviter.</p>
-      </div>
-      <div class="hero-card">
-        <span>Meilleur pick actuel</span>
-        <strong id="heroPick">—</strong>
-        <small id="heroMeta">Chargement...</small>
-        <button onclick="copyAll()">Copier les pronos MPP</button>
-      </div>
-    </section>
-
-    <section class="controls">
-      <input id="search" placeholder="Recherche : France, Argentine, Espagne..." oninput="render()"/>
-      <select id="mode" onchange="render()">
-        <option value="balanced">Équilibré</option>
-        <option value="safe">Safe</option>
-        <option value="comeback">Remontada</option>
-      </select>
-      <select id="filter" onchange="render()">
-        <option value="all">Tous</option>
-        <option value="recommended">Recommandés</option>
-        <option value="safe">Safe</option>
-        <option value="value">Value</option>
-        <option value="avoid">À éviter / attendre</option>
-      </select>
-    </section>
-
-    <section class="kpis">
-      <div><b id="kpiAnalyzed">—</b><span>Matchs analysés</span></div>
-      <div><b id="kpiRecommended">—</b><span>À jouer</span></div>
-      <div><b id="kpiSafe">—</b><span>Safe</span></div>
-      <div><b id="kpiAvoid">—</b><span>À éviter</span></div>
-    </section>
-
-    <section class="dashboard">
-      <div class="main">
-        <div id="cards" class="cards"></div>
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo-mark">
+          <span>⚽</span>
+        </div>
+        <div>
+          <strong>World Cup<br/>AI Pro</strong>
+          <p>Pronos intelligents,<br/>victoire assurée.</p>
+        </div>
       </div>
 
-      <aside>
-        <div class="panel">
-          <h2>Top 5 MPP</h2>
-          <div id="topList"></div>
+      <nav>
+        <a class="active">⌂ Dashboard</a>
+        <a>☷ Matchs</a>
+        <a>♕ Classements</a>
+        <a>◎ Stratégie MPP</a>
+        <a>▥ Statistiques</a>
+        <a>✦ Assistant IA</a>
+      </nav>
+
+      <div class="premium">
+        <span>♛</span>
+        <b>Mode actuel</b>
+        <p id="sideMode">Équilibré</p>
+      </div>
+    </aside>
+
+    <section class="content">
+      <header class="topbar">
+        <div>
+          <span class="eyebrow">Livrable 3 · DA chic</span>
+          <h1>Bonjour Juliette ♡</h1>
+          <p>Voici les meilleurs pronostics MPP du moment.</p>
         </div>
 
-        <div class="panel">
-          <h2>Stratégie active</h2>
-          <p id="strategyText"></p>
+        <div class="search-wrap">
+          <input id="search" placeholder="Rechercher un match, une équipe..." oninput="render()"/>
+        </div>
+      </header>
+
+      <section class="controls">
+        <select id="mode" onchange="render()">
+          <option value="balanced">Mode équilibré</option>
+          <option value="safe">Mode safe</option>
+          <option value="comeback">Mode remontada</option>
+        </select>
+        <select id="filter" onchange="render()">
+          <option value="all">Tous</option>
+          <option value="recommended">Recommandés</option>
+          <option value="safe">Safe</option>
+          <option value="value">Value</option>
+          <option value="avoid">À éviter / attendre</option>
+        </select>
+        <button onclick="copyAll()">Copier vers MPP</button>
+      </section>
+
+      <section class="kpis">
+        <div><span>Matchs analysés</span><b id="kpiAnalyzed">—</b></div>
+        <div><span>À jouer</span><b id="kpiRecommended">—</b></div>
+        <div><span>Safe</span><b id="kpiSafe">—</b></div>
+        <div><span>À éviter</span><b id="kpiAvoid">—</b></div>
+      </section>
+
+      <section class="dashboard">
+        <div class="left">
+          <div class="panel top-picks">
+            <h2>★ Top 5 du jour</h2>
+            <div id="topList"></div>
+          </div>
+
+          <div class="panel strategy">
+            <h2>◎ Stratégie MPP</h2>
+            <p id="strategyText"></p>
+          </div>
         </div>
 
-        <div class="panel">
-          <h2>Matchs à éviter</h2>
-          <div id="avoidList"></div>
+        <div class="center">
+          <div class="spotlight" id="spotlight"></div>
+          <div id="cards" class="cards"></div>
         </div>
-      </aside>
+
+        <div class="right">
+          <div class="panel">
+            <h2>⚠ Matchs à éviter</h2>
+            <div id="avoidList"></div>
+          </div>
+
+          <div class="panel">
+            <h2>◇ Value picks</h2>
+            <div id="valueList"></div>
+          </div>
+        </div>
+      </section>
     </section>
   </main>
 

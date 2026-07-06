@@ -1,11 +1,14 @@
-# World Cup AI PRO — V2
+# World Cup AI PRO — V3 Chic
 
-Sprint 1 livré.
+Nouvelle direction artistique :
+- beige
+- marron
+- vert premium
+- logo en haut à gauche
+- dashboard chic
 
-Fichiers à mettre à la racine du repo GitHub :
+Fichiers à remplacer à la racine GitHub :
 - index.html
 - styles.css
 - app.js
 - README.md
-
-Déploiement : Vercel > Deploy.
