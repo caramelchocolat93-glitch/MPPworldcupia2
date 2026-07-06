@@ -24,7 +24,7 @@ const DATA = [
     },
     "signals": [
       "Espagne plus stable collectivement",
-      "Portugal très dangereux en transition",
+      "Portugal dangereux en transition",
       "Risque de nul élevé",
       "Très faible marge"
     ],
@@ -55,7 +55,7 @@ const DATA = [
     },
     "signals": [
       "Contexte favorable USA",
-      "Belgique talentueuse mais irrégulière",
+      "Belgique irrégulière",
       "Match ouvert",
       "Potentiel value"
     ],
@@ -86,9 +86,9 @@ const DATA = [
     },
     "signals": [
       "Écart de niveau net",
-      "Expérience des matchs à élimination",
+      "Expérience élimination",
       "Plafond offensif supérieur",
-      "Égypte sortie aux tirs au but"
+      "Pick safe MPP"
     ],
     "why": "C’est le pick le plus propre du tableau actuel. L’Argentine a l’avantage en expérience, qualité individuelle et capacité à contrôler le match."
   },
@@ -117,8 +117,8 @@ const DATA = [
     },
     "signals": [
       "Match très équilibré",
-      "Suisse très organisée",
-      "Colombie plus explosive",
+      "Suisse organisée",
+      "Colombie explosive",
       "Risque prolongation"
     ],
     "why": "La Colombie a plus de tranchant offensif, mais la Suisse est difficile à casser. Très fort risque de match serré."
@@ -149,8 +149,8 @@ const DATA = [
     "signals": [
       "France plus complète",
       "Maroc en confiance",
-      "Transitions marocaines dangereuses",
-      "Match potentiellement fermé"
+      "Transitions dangereuses",
+      "Match fermé possible"
     ],
     "why": "La France reste favorite, mais le Maroc peut rendre le match compliqué. Le 2-1 est plus réaliste qu’un score trop large."
   },
@@ -179,7 +179,7 @@ const DATA = [
     },
     "signals": [
       "Qualifiés inconnus",
-      "Styles très différents selon les vainqueurs",
+      "Styles différents",
       "À recalculer"
     ],
     "why": "Ne verrouille pas ce match avant de connaître les équipes qualifiées."
@@ -209,8 +209,8 @@ const DATA = [
     },
     "signals": [
       "Norvège euphorique",
-      "Angleterre plus complète",
-      "Haaland danger majeur",
+      "Angleterre complète",
+      "Haaland danger",
       "Risque prolongation"
     ],
     "why": "La Norvège est dangereuse, mais l’Angleterre a plus de contrôle collectif. Prévoir un match serré."
@@ -239,7 +239,7 @@ const DATA = [
       "away": 23
     },
     "signals": [
-      "Scénario dépendant des qualifiés",
+      "Dépend des qualifiés",
       "Argentine favorite si qualifiée",
       "Risque à recalculer"
     ],
@@ -270,17 +270,56 @@ function isRecommended(m) {
   return m.pick !== "À attendre" && m.confidence >= 54;
 }
 
+function renderSpotlight(top) {
+  const m = top[0];
+  if (!m) return "";
+  return `
+    <div class="spotlight-hero">
+      <div>
+        <div class="stage">★ Prochain match recommandé</div>
+        <div class="date">${m.date} · ${m.time} · ${m.stage}</div>
+      </div>
+      <div class="vs">
+        <div><span>${m.homeFlag}</span><b>${m.home}</b></div>
+        <strong>VS</strong>
+        <div><span>${m.awayFlag}</span><b>${m.away}</b></div>
+      </div>
+      <div class="result-card">
+        <div>
+          <p>Victoire conseillée</p>
+          <b>${displayPick(m)}</b>
+        </div>
+        <div>
+          <p>Fiabilité</p>
+          <b>${m.reliability}/10</b>
+        </div>
+        <div>
+          <p>Score conseillé</p>
+          <b>${m.score}</b>
+        </div>
+        <div>
+          <p>Score alternatif</p>
+          <b>${m.altScore}</b>
+        </div>
+      </div>
+      <button onclick="copyOne('${m.id}')">Copier vers Mon Petit Prono</button>
+    </div>
+  `;
+}
+
 function render() {
   const q = document.getElementById("search").value.toLowerCase();
   const filter = document.getElementById("filter").value;
   const mode = document.getElementById("mode").value;
+  document.getElementById("sideMode").innerText =
+    mode === "safe" ? "SAFE" : mode === "comeback" ? "REMONTADA" : "ÉQUILIBRÉ";
 
   document.getElementById("strategyText").innerText =
     mode === "safe"
-      ? "Mode Safe : on coupe les matchs trop instables. Objectif : protéger ton classement."
+      ? "Mode Safe : priorité aux picks fiables et réduction des matchs pièges."
       : mode === "comeback"
-      ? "Mode Remontada : on garde les bases solides et on ajoute des value picks calculés pour se différencier."
-      : "Mode Équilibré : on joue les favoris propres, puis 1 ou 2 value picks si le potentiel MPP est intéressant.";
+      ? "Mode Remontada : on conserve les bases solides, mais on accepte des value picks pour se différencier."
+      : "Mode Équilibré : sécuriser les favoris solides et prendre une ou deux différences calculées.";
 
   const list = DATA.filter(m => {
     const text = `${m.home} ${m.away} ${m.stage} ${m.pick} ${m.category} ${m.why}`.toLowerCase();
@@ -292,7 +331,15 @@ function render() {
     return true;
   });
 
-  document.getElementById("cards").innerHTML = list.map((m, index) => `
+  const recommended = DATA.filter(isRecommended);
+  const safe = DATA.filter(m => m.confidence >= 70);
+  const avoid = DATA.filter(m => m.pick === "À attendre" || m.confidence < 54);
+  const value = DATA.filter(m => m.category.toLowerCase().includes("value"));
+  const top = recommended.slice().sort((a,b) => b.confidence - a.confidence);
+
+  document.getElementById("spotlight").innerHTML = renderSpotlight(top);
+
+  document.getElementById("cards").innerHTML = list.map(m => `
     <article class="match-card">
       <section>
         <div class="stage">${m.stage}</div>
@@ -311,41 +358,32 @@ function render() {
         <p><b>Qualification probable :</b> ${m.qualification}</p>
         <p><b>Alternative :</b> ${m.altScore}</p>
         ${m.confidence ? `
-          <div class="probs">
-            <div class="prob-row"><span>1</span><div class="bar"><span style="width:${m.probabilities.home}%"></span></div><span>${m.probabilities.home}%</span></div>
-            <div class="prob-row"><span>N</span><div class="bar"><span style="width:${m.probabilities.draw}%"></span></div><span>${m.probabilities.draw}%</span></div>
-            <div class="prob-row"><span>2</span><div class="bar"><span style="width:${m.probabilities.away}%"></span></div><span>${m.probabilities.away}%</span></div>
-          </div>` : ""}
+          <div class="prob-row"><span>1</span><div class="bar"><span style="width:${m.probabilities.home}%"></span></div><span>${m.probabilities.home}%</span></div>
+          <div class="prob-row"><span>N</span><div class="bar"><span style="width:${m.probabilities.draw}%"></span></div><span>${m.probabilities.draw}%</span></div>
+          <div class="prob-row"><span>2</span><div class="bar"><span style="width:${m.probabilities.away}%"></span></div><span>${m.probabilities.away}%</span></div>` : ""}
         <div class="copy" onclick="copyOne('${m.id}')">Copier ce prono</div>
       </section>
     </article>
   `).join("");
-
-  const recommended = DATA.filter(isRecommended);
-  const safe = DATA.filter(m => m.confidence >= 70);
-  const avoid = DATA.filter(m => m.pick === "À attendre" || m.confidence < 54);
-  const top = recommended.slice().sort((a,b) => b.confidence - a.confidence);
 
   document.getElementById("kpiAnalyzed").innerText = DATA.length;
   document.getElementById("kpiRecommended").innerText = recommended.length;
   document.getElementById("kpiSafe").innerText = safe.length;
   document.getElementById("kpiAvoid").innerText = avoid.length;
 
-  document.getElementById("heroPick").innerText = top[0]?.pick || "—";
-  document.getElementById("heroMeta").innerText = top[0] ? `${top[0].home} - ${top[0].away} · ${top[0].score} · ${top[0].confidence}%` : "Aucun pick";
-
-  document.getElementById("topList").innerHTML = top.slice(0,5).map(m => `
+  document.getElementById("topList").innerHTML = top.slice(0,5).map((m, i) => `
     <div class="mini-row">
-      <b>${displayPick(m)} · ${m.score}</b>
+      <b>${i+1}. ${displayPick(m)} · ${m.score}</b>
       <span>${m.home} - ${m.away} · ${m.confidence}% · ${m.category}</span>
     </div>
   `).join("");
 
   document.getElementById("avoidList").innerHTML = avoid.map(m => `
-    <div class="mini-row">
-      <b>${m.home} - ${m.away}</b>
-      <span>${m.category} · ${m.risk}</span>
-    </div>
+    <div class="mini-row"><b>${m.home} - ${m.away}</b><span>${m.category} · ${m.risk}</span></div>
+  `).join("");
+
+  document.getElementById("valueList").innerHTML = value.map(m => `
+    <div class="mini-row"><b>${m.pick} · ${m.score}</b><span>${m.home} - ${m.away} · ${m.confidence}%</span></div>
   `).join("");
 }
 
