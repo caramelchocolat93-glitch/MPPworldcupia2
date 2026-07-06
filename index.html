@@ -1,64 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>World Cup AI PRO</title>
+  <title>World Cup AI PRO — V2</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <main class="wrap">
+  <main class="app">
     <section class="hero">
       <div>
-        <span class="badge">World Cup AI PRO · MPP</span>
-        <h1>Les pronos à mettre maintenant.</h1>
-        <p>Dashboard express pour Mon Petit Prono : pronostics, scores conseillés, confiance, risque et copie en un clic.</p>
+        <span class="eyebrow">Sprint 1 livré · V2</span>
+        <h1>World Cup AI PRO</h1>
+        <p>L’assistant MPP qui trie les vrais picks, les value bets et les matchs à éviter.</p>
       </div>
       <div class="hero-card">
-        <span class="label">Top pick</span>
-        <strong id="topPick">—</strong>
-        <p id="topPickSub">Chargement...</p>
+        <span>Meilleur pick actuel</span>
+        <strong id="heroPick">—</strong>
+        <small id="heroMeta">Chargement...</small>
+        <button onclick="copyAll()">Copier les pronos MPP</button>
       </div>
     </section>
 
-    <section class="toolbar">
-      <input id="search" placeholder="Recherche : France, Argentine, Espagne..." oninput="render()" />
+    <section class="controls">
+      <input id="search" placeholder="Recherche : France, Argentine, Espagne..." oninput="render()"/>
       <select id="mode" onchange="render()">
-        <option value="balanced">Mode équilibré</option>
-        <option value="safe">Mode safe</option>
-        <option value="comeback">Mode remontada</option>
+        <option value="balanced">Équilibré</option>
+        <option value="safe">Safe</option>
+        <option value="comeback">Remontada</option>
       </select>
       <select id="filter" onchange="render()">
         <option value="all">Tous</option>
-        <option value="play">À jouer</option>
+        <option value="recommended">Recommandés</option>
         <option value="safe">Safe</option>
-        <option value="wait">À attendre</option>
+        <option value="value">Value</option>
+        <option value="avoid">À éviter / attendre</option>
       </select>
-      <button onclick="copyAll()">Copier MPP</button>
     </section>
 
     <section class="kpis">
-      <div class="kpi"><b id="kpiMatches">—</b><span>Matchs</span></div>
-      <div class="kpi"><b id="kpiPlayable">—</b><span>À jouer</span></div>
-      <div class="kpi"><b id="kpiSafe">—</b><span>Safe</span></div>
-      <div class="kpi"><b>06/07</b><span>Update</span></div>
+      <div><b id="kpiAnalyzed">—</b><span>Matchs analysés</span></div>
+      <div><b id="kpiRecommended">—</b><span>À jouer</span></div>
+      <div><b id="kpiSafe">—</b><span>Safe</span></div>
+      <div><b id="kpiAvoid">—</b><span>À éviter</span></div>
     </section>
 
-    <section class="layout">
-      <div id="cards" class="cards"></div>
+    <section class="dashboard">
+      <div class="main">
+        <div id="cards" class="cards"></div>
+      </div>
 
-      <aside class="side">
+      <aside>
         <div class="panel">
           <h2>Top 5 MPP</h2>
-          <table>
-            <thead><tr><th>Match</th><th>Pick</th><th>Score</th><th>%</th></tr></thead>
-            <tbody id="topRows"></tbody>
-          </table>
+          <div id="topList"></div>
         </div>
 
         <div class="panel">
-          <h2>Stratégie</h2>
-          <p id="strategyText">Mode équilibré : sécuriser les gros favoris et prendre 1 value calculée.</p>
+          <h2>Stratégie active</h2>
+          <p id="strategyText"></p>
+        </div>
+
+        <div class="panel">
+          <h2>Matchs à éviter</h2>
+          <div id="avoidList"></div>
         </div>
       </aside>
     </section>

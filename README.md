@@ -1,11 +1,11 @@
-# World Cup AI PRO
+# World Cup AI PRO — V2
 
-Version simple Vercel : 4 fichiers seulement.
+Sprint 1 livré.
 
-À mettre à la racine GitHub :
+Fichiers à mettre à la racine du repo GitHub :
 - index.html
 - styles.css
 - app.js
 - README.md
 
-Puis Vercel détectera un site statique.
+Déploiement : Vercel > Deploy.
