@@ -3,93 +3,99 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>World Cup AI Pro — V4</title>
+  <title>World Cup AI Pro — Executive</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <main class="shell">
-    <header class="nav">
+  <main class="app">
+    <header class="topbar">
       <div class="brand">
-        <div class="logo">
-          <span class="logo-ball">◌</span>
-          <span class="logo-ai">AI</span>
+        <div class="brand-mark">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="27"></circle>
+            <path d="M19 38c7-16 19-16 26 0M22 24h20M24 44h16"></path>
+          </svg>
         </div>
         <div>
-          <strong>World Cup AI</strong>
-          <small>MPP Strategy Terminal</small>
+          <strong>World Cup AI Pro</strong>
+          <span>Executive Prediction Terminal</span>
         </div>
       </div>
-
-      <div class="nav-actions">
+      <div class="top-actions">
         <select id="mode" onchange="render()">
-          <option value="balanced">Équilibré</option>
+          <option value="balanced">Balanced</option>
           <option value="safe">Safe</option>
           <option value="comeback">Remontada</option>
         </select>
-        <button onclick="copyAll()">Copier MPP</button>
+        <button onclick="copyAll()">Copy MPP Picks</button>
       </div>
     </header>
 
     <section class="hero">
-      <div class="hero-left">
-        <span class="caption">Terminal Coupe du Monde</span>
-        <h1>Bonjour Juliette.</h1>
-        <p id="heroSentence">Analyse des matchs restants en cours...</p>
-
-        <div class="hero-metrics">
-          <div><span>Matchs</span><b id="kpiMatches">—</b></div>
-          <div><span>Recommandés</span><b id="kpiRecommended">—</b></div>
-          <div><span>À éviter</span><b id="kpiAvoid">—</b></div>
+      <div class="hero-main">
+        <span class="overline">AI Strategy Brief</span>
+        <h1>Prends les bons points. Pas tous les risques.</h1>
+        <p id="heroText">Chargement du modèle...</p>
+        <div class="executive-grid">
+          <div><span>Analyzed</span><b id="m1">—</b></div>
+          <div><span>Recommended</span><b id="m2">—</b></div>
+          <div><span>High confidence</span><b id="m3">—</b></div>
+          <div><span>Avoid</span><b id="m4">—</b></div>
         </div>
       </div>
 
-      <div class="top-pick" id="topPick"></div>
+      <div class="prime-card" id="primeCard"></div>
 
-      <div class="mpp-card">
-        <span class="caption">Stratégie MPP</span>
-        <h2 id="strategyTitle">Mode équilibré</h2>
+      <div class="strategy-card">
+        <span class="overline">MPP Positioning</span>
+        <h2 id="strategyTitle">Balanced</h2>
         <p id="strategyText"></p>
-        <div class="strategy-grid">
-          <div><b id="safeMini">—</b><span>favoris à suivre</span></div>
-          <div><b id="valueMini">—</b><span>différences possibles</span></div>
+        <div class="matrix">
+          <div><b id="safeCount">—</b><span>Core picks</span></div>
+          <div><b id="valueCount">—</b><span>Value angles</span></div>
         </div>
       </div>
     </section>
 
-    <section class="toolbar">
-      <input id="search" placeholder="Rechercher une équipe, un match..." oninput="render()"/>
-      <div class="tabs">
-        <button class="tab active" data-filter="all" onclick="setFilter('all')">Tous</button>
-        <button class="tab" data-filter="recommended" onclick="setFilter('recommended')">Picks</button>
-        <button class="tab" data-filter="value" onclick="setFilter('value')">Value</button>
-        <button class="tab" data-filter="trap" onclick="setFilter('trap')">Pièges</button>
+    <section class="command">
+      <input id="search" placeholder="Search team, match, pick..." oninput="render()"/>
+      <div class="filters">
+        <button class="filter active" data-filter="all" onclick="setFilter('all')">All</button>
+        <button class="filter" data-filter="recommended" onclick="setFilter('recommended')">Recommended</button>
+        <button class="filter" data-filter="value" onclick="setFilter('value')">Value</button>
+        <button class="filter" data-filter="risk" onclick="setFilter('risk')">Risk</button>
       </div>
     </section>
 
-    <section class="main-grid">
-      <aside class="ranking panel">
-        <span class="caption">Top picks</span>
-        <div id="ranking"></div>
+    <section class="terminal">
+      <aside class="panel leaderboard">
+        <div class="panel-head">
+          <span class="overline">Ranking</span>
+          <h2>Top picks</h2>
+        </div>
+        <div id="topList"></div>
       </aside>
 
-      <section class="matches panel">
-        <div class="section-head">
+      <section class="panel board">
+        <div class="panel-head row">
           <div>
-            <span class="caption">Matchs restants</span>
-            <h2>Tous les matchs</h2>
+            <span class="overline">Fixtures</span>
+            <h2 id="boardTitle">Match board</h2>
           </div>
-          <span id="filterLabel">Tous</span>
+          <span class="status-dot">Live model</span>
         </div>
-        <div id="matchList" class="match-list"></div>
+        <div id="matchBoard" class="match-board"></div>
       </section>
 
-      <aside class="insights panel">
-        <span class="caption">Insights</span>
-        <div id="insights"></div>
+      <aside class="panel insights">
+        <div class="panel-head">
+          <span class="overline">Signal</span>
+          <h2>Model alerts</h2>
+        </div>
+        <div id="alerts"></div>
       </aside>
     </section>
   </main>
-
   <script src="app.js"></script>
 </body>
 </html>

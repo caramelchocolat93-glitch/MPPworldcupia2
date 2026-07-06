@@ -1,16 +1,15 @@
-# World Cup AI Pro — V4 Premium
+# World Cup AI Pro — V5 Executive
 
-Refonte complète :
-- design ivoire / noisette / sauge
-- logo premium en haut à gauche
-- interface type app
-- liste de matchs façon terminal sportif
-- détails dépliables
-- top pick central
-- stratégie MPP
-- export copier-coller
+Version premium plus "grand produit" :
+- logo SVG sérieux
+- interface executive terminal
+- plus de contraste
+- emojis retirés
+- visuels plus nets
+- cartes plus lisibles
+- style SaaS premium
 
-À remplacer dans GitHub :
+Remplacer à la racine :
 - index.html
 - styles.css
 - app.js
