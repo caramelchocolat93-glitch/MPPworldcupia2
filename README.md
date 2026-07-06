@@ -1,16 +1,5 @@
-# World Cup AI Pro — V5 Executive
+# World Cup AI Pro — V6 Clarity
 
-Version premium plus "grand produit" :
-- logo SVG sérieux
-- interface executive terminal
-- plus de contraste
-- emojis retirés
-- visuels plus nets
-- cartes plus lisibles
-- style SaaS premium
+Lecture rapide et encadrés mieux délimités.
 
-Remplacer à la racine :
-- index.html
-- styles.css
-- app.js
-- README.md
+Remplacer : index.html, styles.css, app.js, README.md
