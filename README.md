@@ -1,13 +1,16 @@
-# World Cup AI PRO — V3 Chic
+# World Cup AI Pro — V4 Premium
 
-Nouvelle direction artistique :
-- beige
-- marron
-- vert premium
-- logo en haut à gauche
-- dashboard chic
+Refonte complète :
+- design ivoire / noisette / sauge
+- logo premium en haut à gauche
+- interface type app
+- liste de matchs façon terminal sportif
+- détails dépliables
+- top pick central
+- stratégie MPP
+- export copier-coller
 
-Fichiers à remplacer à la racine GitHub :
+À remplacer dans GitHub :
 - index.html
 - styles.css
 - app.js

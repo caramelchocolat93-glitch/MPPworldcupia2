@@ -3,104 +3,90 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>World Cup AI PRO — V3</title>
+  <title>World Cup AI Pro — V4</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <main class="app">
-    <aside class="sidebar">
+  <main class="shell">
+    <header class="nav">
       <div class="brand">
-        <div class="logo-mark">
-          <span>⚽</span>
+        <div class="logo">
+          <span class="logo-ball">◌</span>
+          <span class="logo-ai">AI</span>
         </div>
         <div>
-          <strong>World Cup<br/>AI Pro</strong>
-          <p>Pronos intelligents,<br/>victoire assurée.</p>
+          <strong>World Cup AI</strong>
+          <small>MPP Strategy Terminal</small>
         </div>
       </div>
 
-      <nav>
-        <a class="active">⌂ Dashboard</a>
-        <a>☷ Matchs</a>
-        <a>♕ Classements</a>
-        <a>◎ Stratégie MPP</a>
-        <a>▥ Statistiques</a>
-        <a>✦ Assistant IA</a>
-      </nav>
-
-      <div class="premium">
-        <span>♛</span>
-        <b>Mode actuel</b>
-        <p id="sideMode">Équilibré</p>
-      </div>
-    </aside>
-
-    <section class="content">
-      <header class="topbar">
-        <div>
-          <span class="eyebrow">Livrable 3 · DA chic</span>
-          <h1>Bonjour Juliette ♡</h1>
-          <p>Voici les meilleurs pronostics MPP du moment.</p>
-        </div>
-
-        <div class="search-wrap">
-          <input id="search" placeholder="Rechercher un match, une équipe..." oninput="render()"/>
-        </div>
-      </header>
-
-      <section class="controls">
+      <div class="nav-actions">
         <select id="mode" onchange="render()">
-          <option value="balanced">Mode équilibré</option>
-          <option value="safe">Mode safe</option>
-          <option value="comeback">Mode remontada</option>
-        </select>
-        <select id="filter" onchange="render()">
-          <option value="all">Tous</option>
-          <option value="recommended">Recommandés</option>
+          <option value="balanced">Équilibré</option>
           <option value="safe">Safe</option>
-          <option value="value">Value</option>
-          <option value="avoid">À éviter / attendre</option>
+          <option value="comeback">Remontada</option>
         </select>
-        <button onclick="copyAll()">Copier vers MPP</button>
+        <button onclick="copyAll()">Copier MPP</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <span class="caption">Terminal Coupe du Monde</span>
+        <h1>Bonjour Juliette.</h1>
+        <p id="heroSentence">Analyse des matchs restants en cours...</p>
+
+        <div class="hero-metrics">
+          <div><span>Matchs</span><b id="kpiMatches">—</b></div>
+          <div><span>Recommandés</span><b id="kpiRecommended">—</b></div>
+          <div><span>À éviter</span><b id="kpiAvoid">—</b></div>
+        </div>
+      </div>
+
+      <div class="top-pick" id="topPick"></div>
+
+      <div class="mpp-card">
+        <span class="caption">Stratégie MPP</span>
+        <h2 id="strategyTitle">Mode équilibré</h2>
+        <p id="strategyText"></p>
+        <div class="strategy-grid">
+          <div><b id="safeMini">—</b><span>favoris à suivre</span></div>
+          <div><b id="valueMini">—</b><span>différences possibles</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <input id="search" placeholder="Rechercher une équipe, un match..." oninput="render()"/>
+      <div class="tabs">
+        <button class="tab active" data-filter="all" onclick="setFilter('all')">Tous</button>
+        <button class="tab" data-filter="recommended" onclick="setFilter('recommended')">Picks</button>
+        <button class="tab" data-filter="value" onclick="setFilter('value')">Value</button>
+        <button class="tab" data-filter="trap" onclick="setFilter('trap')">Pièges</button>
+      </div>
+    </section>
+
+    <section class="main-grid">
+      <aside class="ranking panel">
+        <span class="caption">Top picks</span>
+        <div id="ranking"></div>
+      </aside>
+
+      <section class="matches panel">
+        <div class="section-head">
+          <div>
+            <span class="caption">Matchs restants</span>
+            <h2>Tous les matchs</h2>
+          </div>
+          <span id="filterLabel">Tous</span>
+        </div>
+        <div id="matchList" class="match-list"></div>
       </section>
 
-      <section class="kpis">
-        <div><span>Matchs analysés</span><b id="kpiAnalyzed">—</b></div>
-        <div><span>À jouer</span><b id="kpiRecommended">—</b></div>
-        <div><span>Safe</span><b id="kpiSafe">—</b></div>
-        <div><span>À éviter</span><b id="kpiAvoid">—</b></div>
-      </section>
-
-      <section class="dashboard">
-        <div class="left">
-          <div class="panel top-picks">
-            <h2>★ Top 5 du jour</h2>
-            <div id="topList"></div>
-          </div>
-
-          <div class="panel strategy">
-            <h2>◎ Stratégie MPP</h2>
-            <p id="strategyText"></p>
-          </div>
-        </div>
-
-        <div class="center">
-          <div class="spotlight" id="spotlight"></div>
-          <div id="cards" class="cards"></div>
-        </div>
-
-        <div class="right">
-          <div class="panel">
-            <h2>⚠ Matchs à éviter</h2>
-            <div id="avoidList"></div>
-          </div>
-
-          <div class="panel">
-            <h2>◇ Value picks</h2>
-            <div id="valueList"></div>
-          </div>
-        </div>
-      </section>
+      <aside class="insights panel">
+        <span class="caption">Insights</span>
+        <div id="insights"></div>
+      </aside>
     </section>
   </main>
 

@@ -1,70 +1,8 @@
 const DATA = [
   {
-    "id": "por-esp",
-    "date": "06/07",
-    "time": "21h00",
-    "stage": "8e de finale",
-    "home": "Portugal",
-    "away": "Espagne",
-    "homeFlag": "🇵🇹",
-    "awayFlag": "🇪🇸",
-    "pick": "Espagne",
-    "score": "1-2",
-    "altScore": "1-1",
-    "confidence": 56,
-    "reliability": 5.8,
-    "risk": "Élevé",
-    "category": "Match piège",
-    "strategy": "À jouer seulement si tu veux te différencier.",
-    "qualification": "Espagne",
-    "probabilities": {
-      "home": 32,
-      "draw": 27,
-      "away": 41
-    },
-    "signals": [
-      "Espagne plus stable collectivement",
-      "Portugal dangereux en transition",
-      "Risque de nul élevé",
-      "Très faible marge"
-    ],
-    "why": "L’Espagne ressort légèrement devant, mais l’écart est faible. Pour MPP, ce n’est pas un pick safe : c’est un choix de différenciation."
-  },
-  {
-    "id": "usa-bel",
-    "date": "07/07",
-    "time": "02h00",
-    "stage": "8e de finale",
-    "home": "États-Unis",
-    "away": "Belgique",
-    "homeFlag": "🇺🇸",
-    "awayFlag": "🇧🇪",
-    "pick": "États-Unis",
-    "score": "2-1",
-    "altScore": "1-1",
-    "confidence": 59,
-    "reliability": 6.1,
-    "risk": "Moyen+",
-    "category": "Value MPP",
-    "strategy": "Bon pick remontada, pas idéal si tu veux sécuriser.",
-    "qualification": "États-Unis",
-    "probabilities": {
-      "home": 43,
-      "draw": 25,
-      "away": 32
-    },
-    "signals": [
-      "Contexte favorable USA",
-      "Belgique irrégulière",
-      "Match ouvert",
-      "Potentiel value"
-    ],
-    "why": "Les États-Unis ont un profil intéressant pour se différencier. La Belgique reste très dangereuse, donc ce choix doit être assumé comme value."
-  },
-  {
     "id": "arg-egy",
     "date": "07/07",
-    "time": "18h00",
+    "time": "18:00",
     "stage": "8e de finale",
     "home": "Argentine",
     "away": "Égypte",
@@ -76,57 +14,28 @@ const DATA = [
     "confidence": 78,
     "reliability": 8.4,
     "risk": "Faible",
-    "category": "Safe",
-    "strategy": "Pick à verrouiller en priorité.",
+    "category": "Hot Pick",
     "qualification": "Argentine",
     "probabilities": {
       "home": 69,
       "draw": 19,
       "away": 12
     },
+    "momentum": "En hausse",
+    "mpp": "À verrouiller",
+    "tag": "SAFE",
+    "why": "L’Argentine possède l’avantage le plus net du tableau actuel : expérience, qualité individuelle et capacité à contrôler le tempo.",
     "signals": [
       "Écart de niveau net",
       "Expérience élimination",
       "Plafond offensif supérieur",
-      "Pick safe MPP"
-    ],
-    "why": "C’est le pick le plus propre du tableau actuel. L’Argentine a l’avantage en expérience, qualité individuelle et capacité à contrôler le match."
-  },
-  {
-    "id": "sui-col",
-    "date": "07/07",
-    "time": "22h00",
-    "stage": "8e de finale",
-    "home": "Suisse",
-    "away": "Colombie",
-    "homeFlag": "🇨🇭",
-    "awayFlag": "🇨🇴",
-    "pick": "Colombie",
-    "score": "1-2",
-    "altScore": "1-1",
-    "confidence": 54,
-    "reliability": 5.2,
-    "risk": "Élevé",
-    "category": "Value risquée",
-    "strategy": "À éviter en mode safe. Jouable uniquement en remontada.",
-    "qualification": "Colombie",
-    "probabilities": {
-      "home": 35,
-      "draw": 28,
-      "away": 37
-    },
-    "signals": [
-      "Match très équilibré",
-      "Suisse organisée",
-      "Colombie explosive",
-      "Risque prolongation"
-    ],
-    "why": "La Colombie a plus de tranchant offensif, mais la Suisse est difficile à casser. Très fort risque de match serré."
+      "Pick le plus fiable"
+    ]
   },
   {
     "id": "fra-mar",
     "date": "09/07",
-    "time": "22h00",
+    "time": "22:00",
     "stage": "Quart de finale",
     "home": "France",
     "away": "Maroc",
@@ -138,56 +47,28 @@ const DATA = [
     "confidence": 72,
     "reliability": 7.6,
     "risk": "Moyen",
-    "category": "Safe contrôlé",
-    "strategy": "Bon pick principal, score à ne pas surcharger.",
+    "category": "Core Pick",
     "qualification": "France",
     "probabilities": {
       "home": 58,
       "draw": 24,
       "away": 18
     },
+    "momentum": "Stable",
+    "mpp": "Très jouable",
+    "tag": "CORE",
+    "why": "La France reste favorite, mais le Maroc peut fermer le match et frapper en transition. Le 2-1 est plus crédible qu’un score large.",
     "signals": [
       "France plus complète",
       "Maroc en confiance",
       "Transitions dangereuses",
-      "Match fermé possible"
-    ],
-    "why": "La France reste favorite, mais le Maroc peut rendre le match compliqué. Le 2-1 est plus réaliste qu’un score trop large."
-  },
-  {
-    "id": "qf-unknown-1",
-    "date": "10/07",
-    "time": "21h00",
-    "stage": "Quart de finale",
-    "home": "Vainqueur Portugal/Espagne",
-    "away": "Vainqueur USA/Belgique",
-    "homeFlag": "⏳",
-    "awayFlag": "⏳",
-    "pick": "À attendre",
-    "score": "—",
-    "altScore": "—",
-    "confidence": 0,
-    "reliability": 0,
-    "risk": "À attendre",
-    "category": "Ne pas verrouiller",
-    "strategy": "Attendre les qualifiés.",
-    "qualification": "À confirmer",
-    "probabilities": {
-      "home": 0,
-      "draw": 0,
-      "away": 0
-    },
-    "signals": [
-      "Qualifiés inconnus",
-      "Styles différents",
-      "À recalculer"
-    ],
-    "why": "Ne verrouille pas ce match avant de connaître les équipes qualifiées."
+      "Score serré probable"
+    ]
   },
   {
     "id": "nor-eng",
     "date": "11/07",
-    "time": "23h00",
+    "time": "23:00",
     "stage": "Quart de finale",
     "home": "Norvège",
     "away": "Angleterre",
@@ -199,26 +80,159 @@ const DATA = [
     "confidence": 60,
     "reliability": 6.4,
     "risk": "Moyen+",
-    "category": "Équilibré",
-    "strategy": "Pick jouable, mais pas safe à 100%.",
+    "category": "Balanced",
     "qualification": "Angleterre",
     "probabilities": {
       "home": 30,
       "draw": 27,
       "away": 43
     },
+    "momentum": "Volatil",
+    "mpp": "Jouable mais risqué",
+    "tag": "BALANCED",
+    "why": "La Norvège arrive avec une dynamique forte, mais l’Angleterre reste plus complète sur l’ensemble du terrain.",
     "signals": [
       "Norvège euphorique",
-      "Angleterre complète",
+      "Angleterre plus complète",
       "Haaland danger",
       "Risque prolongation"
-    ],
-    "why": "La Norvège est dangereuse, mais l’Angleterre a plus de contrôle collectif. Prévoir un match serré."
+    ]
   },
   {
-    "id": "qf-unknown-2",
+    "id": "usa-bel",
+    "date": "07/07",
+    "time": "02:00",
+    "stage": "8e de finale",
+    "home": "États-Unis",
+    "away": "Belgique",
+    "homeFlag": "🇺🇸",
+    "awayFlag": "🇧🇪",
+    "pick": "États-Unis",
+    "score": "2-1",
+    "altScore": "1-1",
+    "confidence": 59,
+    "reliability": 6.1,
+    "risk": "Moyen+",
+    "category": "Value",
+    "qualification": "États-Unis",
+    "probabilities": {
+      "home": 43,
+      "draw": 25,
+      "away": 32
+    },
+    "momentum": "En hausse",
+    "mpp": "Différenciation",
+    "tag": "VALUE",
+    "why": "Les États-Unis offrent un levier de différenciation intéressant. La Belgique garde une vraie menace offensive.",
+    "signals": [
+      "Contexte favorable USA",
+      "Belgique irrégulière",
+      "Match ouvert",
+      "Potentiel value"
+    ]
+  },
+  {
+    "id": "por-esp",
+    "date": "06/07",
+    "time": "21:00",
+    "stage": "8e de finale",
+    "home": "Portugal",
+    "away": "Espagne",
+    "homeFlag": "🇵🇹",
+    "awayFlag": "🇪🇸",
+    "pick": "Espagne",
+    "score": "1-2",
+    "altScore": "1-1",
+    "confidence": 56,
+    "reliability": 5.8,
+    "risk": "Élevé",
+    "category": "Trap",
+    "qualification": "Espagne",
+    "probabilities": {
+      "home": 32,
+      "draw": 27,
+      "away": 41
+    },
+    "momentum": "Incertain",
+    "mpp": "Match piège",
+    "tag": "TRAP",
+    "why": "L’Espagne ressort légèrement devant, mais l’écart est trop faible pour parler de pick solide.",
+    "signals": [
+      "Espagne plus stable",
+      "Portugal en transition",
+      "Risque nul élevé",
+      "Faible marge"
+    ]
+  },
+  {
+    "id": "sui-col",
+    "date": "07/07",
+    "time": "22:00",
+    "stage": "8e de finale",
+    "home": "Suisse",
+    "away": "Colombie",
+    "homeFlag": "🇨🇭",
+    "awayFlag": "🇨🇴",
+    "pick": "Colombie",
+    "score": "1-2",
+    "altScore": "1-1",
+    "confidence": 54,
+    "reliability": 5.2,
+    "risk": "Élevé",
+    "category": "Trap",
+    "qualification": "Colombie",
+    "probabilities": {
+      "home": 35,
+      "draw": 28,
+      "away": 37
+    },
+    "momentum": "Incertain",
+    "mpp": "À éviter en safe",
+    "tag": "TRAP",
+    "why": "La Colombie a plus de tranchant, mais la Suisse est très difficile à éliminer. Gros risque de prolongation.",
+    "signals": [
+      "Match très équilibré",
+      "Suisse organisée",
+      "Colombie explosive",
+      "Risque prolongation"
+    ]
+  },
+  {
+    "id": "qf-1",
+    "date": "10/07",
+    "time": "21:00",
+    "stage": "Quart de finale",
+    "home": "Vainqueur Portugal/Espagne",
+    "away": "Vainqueur USA/Belgique",
+    "homeFlag": "⏳",
+    "awayFlag": "⏳",
+    "pick": "À attendre",
+    "score": "—",
+    "altScore": "—",
+    "confidence": 0,
+    "reliability": 0,
+    "risk": "À attendre",
+    "category": "Pending",
+    "qualification": "À confirmer",
+    "probabilities": {
+      "home": 0,
+      "draw": 0,
+      "away": 0
+    },
+    "momentum": "À confirmer",
+    "mpp": "Ne pas verrouiller",
+    "tag": "WAIT",
+    "why": "Les équipes ne sont pas encore confirmées. À recalculer après les huitièmes.",
+    "signals": [
+      "Qualifiés inconnus",
+      "Styles différents",
+      "À recalculer"
+    ]
+  },
+  {
+    "id": "qf-2",
     "date": "12/07",
-    "time": "03h00",
+    "time": "03:00",
     "stage": "Quart de finale",
     "home": "Vainqueur Argentine/Égypte",
     "away": "Vainqueur Suisse/Colombie",
@@ -230,24 +244,31 @@ const DATA = [
     "confidence": 66,
     "reliability": 6.8,
     "risk": "À confirmer",
-    "category": "Prévision bracket",
-    "strategy": "À jouer seulement si l’Argentine se qualifie.",
+    "category": "Bracket",
     "qualification": "Argentine probable",
     "probabilities": {
       "home": 52,
       "draw": 25,
       "away": 23
     },
+    "momentum": "À confirmer",
+    "mpp": "Sous condition",
+    "tag": "BRACKET",
+    "why": "Si l’Argentine passe, elle sera favorite. Ce match devra être recalculé dès l’affiche officielle.",
     "signals": [
       "Dépend des qualifiés",
       "Argentine favorite si qualifiée",
       "Risque à recalculer"
-    ],
-    "why": "Si l’Argentine passe, elle sera favorite. Mais ce match doit être recalculé dès que l’affiche est officielle."
+    ]
   }
 ];
+let currentFilter = "all";
 
-function cssClass(m) {
+function isRecommended(m) {
+  return m.pick !== "À attendre" && m.confidence >= 54;
+}
+
+function cls(m) {
   if (m.pick === "À attendre" || m.confidence === 0) return "wait";
   if (m.confidence >= 72 || m.risk === "Faible") return "safe";
   if (m.confidence >= 58 || m.risk.includes("Moyen")) return "mid";
@@ -266,125 +287,120 @@ function line(m) {
   return `${m.date} ${m.time} — ${m.home} - ${m.away} : ${displayPick(m)} | Score MPP : ${m.score} | Alternative : ${m.altScore} | Qualif : ${m.qualification} | Confiance : ${m.confidence}% | Fiabilité : ${m.reliability}/10 | Risque : ${m.risk}`;
 }
 
-function isRecommended(m) {
-  return m.pick !== "À attendre" && m.confidence >= 54;
+function setFilter(f) {
+  currentFilter = f;
+  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.filter === f));
+  render();
 }
 
-function renderSpotlight(top) {
+function renderTop(top) {
   const m = top[0];
   if (!m) return "";
   return `
-    <div class="spotlight-hero">
+    <div class="top-inner">
       <div>
-        <div class="stage">★ Prochain match recommandé</div>
-        <div class="date">${m.date} · ${m.time} · ${m.stage}</div>
+        <span class="caption">Hot pick</span>
+        <p>${m.stage} · ${m.date} · ${m.time}</p>
       </div>
-      <div class="vs">
-        <div><span>${m.homeFlag}</span><b>${m.home}</b></div>
-        <strong>VS</strong>
-        <div><span>${m.awayFlag}</span><b>${m.away}</b></div>
+      <div class="team-big">
+        <div class="flag-big">${m.homeFlag}</div>
+        <b>${m.pick}</b>
+        <p>${m.home} - ${m.away}</p>
       </div>
-      <div class="result-card">
-        <div>
-          <p>Victoire conseillée</p>
-          <b>${displayPick(m)}</b>
-        </div>
-        <div>
-          <p>Fiabilité</p>
-          <b>${m.reliability}/10</b>
-        </div>
-        <div>
-          <p>Score conseillé</p>
-          <b>${m.score}</b>
-        </div>
-        <div>
-          <p>Score alternatif</p>
-          <b>${m.altScore}</b>
-        </div>
+      <div class="confidence-ring" style="--value:${m.confidence}">
+        <span>${m.reliability}/10</span>
       </div>
-      <button onclick="copyOne('${m.id}')">Copier vers Mon Petit Prono</button>
     </div>
   `;
 }
 
 function render() {
   const q = document.getElementById("search").value.toLowerCase();
-  const filter = document.getElementById("filter").value;
   const mode = document.getElementById("mode").value;
-  document.getElementById("sideMode").innerText =
-    mode === "safe" ? "SAFE" : mode === "comeback" ? "REMONTADA" : "ÉQUILIBRÉ";
 
-  document.getElementById("strategyText").innerText =
+  const recommended = DATA.filter(isRecommended);
+  const avoid = DATA.filter(m => m.pick === "À attendre" || m.confidence < 54);
+  const value = DATA.filter(m => ["Value", "Trap"].some(x => m.category.includes(x)));
+  const safe = DATA.filter(m => m.confidence >= 70);
+  const top = recommended.slice().sort((a,b) => b.confidence - a.confidence);
+
+  const strategyTitle = mode === "safe" ? "Mode safe" : mode === "comeback" ? "Mode remontada" : "Mode équilibré";
+  const strategyText =
     mode === "safe"
-      ? "Mode Safe : priorité aux picks fiables et réduction des matchs pièges."
+      ? "Priorité aux picks fiables. On coupe les matchs à marge faible."
       : mode === "comeback"
-      ? "Mode Remontada : on conserve les bases solides, mais on accepte des value picks pour se différencier."
-      : "Mode Équilibré : sécuriser les favoris solides et prendre une ou deux différences calculées.";
+      ? "On garde les bases solides et on ajoute des value picks pour gagner des places."
+      : "On sécurise les meilleurs favoris, puis on tente une différence calculée.";
+
+  document.getElementById("strategyTitle").innerText = strategyTitle;
+  document.getElementById("strategyText").innerText = strategyText;
+  document.getElementById("safeMini").innerText = safe.length;
+  document.getElementById("valueMini").innerText = value.length;
+  document.getElementById("heroSentence").innerText = `${DATA.length} matchs suivis. ${recommended.length} pronostics recommandés. ${avoid.length} matchs à éviter.`;
+  document.getElementById("kpiMatches").innerText = DATA.length;
+  document.getElementById("kpiRecommended").innerText = recommended.length;
+  document.getElementById("kpiAvoid").innerText = avoid.length;
+  document.getElementById("topPick").innerHTML = renderTop(top);
+
+  const label = currentFilter === "all" ? "Tous" : currentFilter === "recommended" ? "Picks" : currentFilter === "value" ? "Value" : "Pièges";
+  document.getElementById("filterLabel").innerText = label;
 
   const list = DATA.filter(m => {
-    const text = `${m.home} ${m.away} ${m.stage} ${m.pick} ${m.category} ${m.why}`.toLowerCase();
+    const text = `${m.home} ${m.away} ${m.pick} ${m.category} ${m.why}`.toLowerCase();
     if (q && !text.includes(q)) return false;
-    if (filter === "recommended" && !isRecommended(m)) return false;
-    if (filter === "safe" && m.confidence < 70) return false;
-    if (filter === "value" && !m.category.toLowerCase().includes("value")) return false;
-    if (filter === "avoid" && m.confidence >= 54 && m.pick !== "À attendre") return false;
+    if (currentFilter === "recommended" && !isRecommended(m)) return false;
+    if (currentFilter === "value" && !value.includes(m)) return false;
+    if (currentFilter === "trap" && !(m.category === "Trap" || m.pick === "À attendre" || m.confidence < 55)) return false;
     return true;
   });
 
-  const recommended = DATA.filter(isRecommended);
-  const safe = DATA.filter(m => m.confidence >= 70);
-  const avoid = DATA.filter(m => m.pick === "À attendre" || m.confidence < 54);
-  const value = DATA.filter(m => m.category.toLowerCase().includes("value"));
-  const top = recommended.slice().sort((a,b) => b.confidence - a.confidence);
-
-  document.getElementById("spotlight").innerHTML = renderSpotlight(top);
-
-  document.getElementById("cards").innerHTML = list.map(m => `
-    <article class="match-card">
-      <section>
-        <div class="stage">${m.stage}</div>
-        <div class="date">${m.date} · ${m.time}</div>
-        <div class="teams">${m.homeFlag} ${m.home}<br>${m.awayFlag} ${m.away}</div>
-        <p>${m.why}</p>
-        <div class="signals">${m.signals.map(s => `<span class="signal">${s}</span>`).join("")}</div>
-      </section>
-      <section>
-        <div class="stage">Prono MPP</div>
-        <div class="pick">${displayPick(m)}</div>
-        <div class="score">Score : ${m.score}</div>
-        <span class="tag ${cssClass(m)}">${m.confidence ? m.confidence + "% confiance" : "À attendre"}</span>
-        <span class="tag ${cssClass(m)}">${m.risk}</span>
-        <span class="tag mid">Fiabilité ${m.reliability}/10</span>
-        <p><b>Qualification probable :</b> ${m.qualification}</p>
-        <p><b>Alternative :</b> ${m.altScore}</p>
-        ${m.confidence ? `
+  document.getElementById("matchList").innerHTML = list.map(m => `
+    <article class="match-row" id="row-${m.id}">
+      <div class="match-summary" onclick="toggleRow('${m.id}')">
+        <div class="team">${m.homeFlag} ${m.home}</div>
+        <div class="time">${m.time}</div>
+        <div class="team">${m.awayFlag} ${m.away}</div>
+        <div class="pick-pill ${cls(m)}">${displayPick(m)} · ${m.score}</div>
+        <div class="chev">⌄</div>
+      </div>
+      <div class="match-detail">
+        <div class="detail-card">
+          <span class="caption">${m.stage} · ${m.date}</span>
+          <h2>${displayPick(m)}</h2>
+          <div class="score">${m.score}</div>
+          <p>${m.why}</p>
+          <div class="signals">${m.signals.map(s => `<span class="signal">${s}</span>`).join("")}</div>
+          <button class="copy" onclick="copyOne('${m.id}')">Copier ce prono</button>
+        </div>
+        <div class="detail-card">
+          <span class="caption">Probabilités 1 / N / 2</span>
           <div class="prob-row"><span>1</span><div class="bar"><span style="width:${m.probabilities.home}%"></span></div><span>${m.probabilities.home}%</span></div>
           <div class="prob-row"><span>N</span><div class="bar"><span style="width:${m.probabilities.draw}%"></span></div><span>${m.probabilities.draw}%</span></div>
-          <div class="prob-row"><span>2</span><div class="bar"><span style="width:${m.probabilities.away}%"></span></div><span>${m.probabilities.away}%</span></div>` : ""}
-        <div class="copy" onclick="copyOne('${m.id}')">Copier ce prono</div>
-      </section>
+          <div class="prob-row"><span>2</span><div class="bar"><span style="width:${m.probabilities.away}%"></span></div><span>${m.probabilities.away}%</span></div>
+          <p><b>Fiabilité :</b> ${m.reliability}/10</p>
+          <p><b>Alternative :</b> ${m.altScore}</p>
+          <p><b>Qualification :</b> ${m.qualification}</p>
+        </div>
+      </div>
     </article>
   `).join("");
 
-  document.getElementById("kpiAnalyzed").innerText = DATA.length;
-  document.getElementById("kpiRecommended").innerText = recommended.length;
-  document.getElementById("kpiSafe").innerText = safe.length;
-  document.getElementById("kpiAvoid").innerText = avoid.length;
-
-  document.getElementById("topList").innerHTML = top.slice(0,5).map((m, i) => `
-    <div class="mini-row">
+  document.getElementById("ranking").innerHTML = top.slice(0,5).map((m,i) => `
+    <div class="rank-item">
       <b>${i+1}. ${displayPick(m)} · ${m.score}</b>
-      <span>${m.home} - ${m.away} · ${m.confidence}% · ${m.category}</span>
+      <span>${m.home} - ${m.away} · ${m.confidence}% · ${m.reliability}/10</span>
+      <em class="badge ${cls(m)}">${m.tag}</em>
     </div>
   `).join("");
 
-  document.getElementById("avoidList").innerHTML = avoid.map(m => `
-    <div class="mini-row"><b>${m.home} - ${m.away}</b><span>${m.category} · ${m.risk}</span></div>
-  `).join("");
+  document.getElementById("insights").innerHTML = [
+    ...avoid.slice(0,3).map(m => `<div class="insight-item"><b>⚠️ Éviter : ${m.home} - ${m.away}</b><span>${m.risk} · ${m.mpp}</span></div>`),
+    ...value.slice(0,2).map(m => `<div class="insight-item"><b>◇ Value : ${m.pick}</b><span>${m.home} - ${m.away} · ${m.confidence}%</span></div>`)
+  ].join("");
+}
 
-  document.getElementById("valueList").innerHTML = value.map(m => `
-    <div class="mini-row"><b>${m.pick} · ${m.score}</b><span>${m.home} - ${m.away} · ${m.confidence}%</span></div>
-  `).join("");
+function toggleRow(id) {
+  document.getElementById("row-" + id).classList.toggle("open");
 }
 
 function copyOne(id) {
