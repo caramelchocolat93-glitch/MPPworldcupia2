@@ -1,7 +1,30 @@
-<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>World Cup AI Pro V6</title><link rel="stylesheet" href="styles.css"/></head><body><main class="app">
-<header class="topbar"><div class="brand"><div class="mark">AI</div><div><strong>World Cup AI Pro</strong><span>MPP Decision Terminal</span></div></div><div class="actions"><select id="mode" onchange="render()"><option value="balanced">Mode équilibré</option><option value="safe">Mode safe</option><option value="comeback">Mode remontada</option></select><button onclick="copyAll()">Copier les pronos</button></div></header>
-<section class="decision"><div class="hero primary"><span>01 · Action immédiate</span><h1>Ce que tu dois jouer.</h1><p id="heroText"></p><div id="instant" class="instant"></div></div><div id="prime" class="hero prime"></div><div class="hero strategy"><span>03 · Stratégie MPP</span><h2 id="strategyTitle"></h2><p id="strategyText"></p><div class="mini"><div><b id="safeCount"></b><small>Picks fiables</small></div><div><b id="valueCount"></b><small>Différences</small></div></div></div></section>
-<section class="kpis"><div><span>Matchs analysés</span><b id="m1"></b></div><div><span>Recommandés</span><b id="m2"></b></div><div><span>Safe</span><b id="m3"></b></div><div><span>À éviter</span><b id="m4"></b></div></section>
-<section class="command"><input id="search" placeholder="Recherche : France, Argentine, piège..." oninput="render()"/><div class="filters"><button class="filter active" data-filter="all" onclick="setFilter('all')">Tous</button><button class="filter" data-filter="recommended" onclick="setFilter('recommended')">À jouer</button><button class="filter" data-filter="safe" onclick="setFilter('safe')">Safe</button><button class="filter" data-filter="risk" onclick="setFilter('risk')">Risques</button></div></section>
-<section class="grid"><aside class="panel"><div class="title"><span>02 · Top picks</span><h2>Priorité MPP</h2></div><div id="ranking"></div></aside><section class="panel main"><div class="title row"><div><span>04 · Match board</span><h2>Où trouver quoi</h2></div><small>Pick · Score · Action · Risque</small></div><div class="legend"><em class="play">À jouer</em><em class="value">Value</em><em class="risk">Risque</em><em class="wait">Attendre</em></div><div id="board"></div></section><aside class="panel"><div class="title"><span>05 · Alertes</span><h2>À surveiller</h2></div><div id="alerts"></div></aside></section>
-</main><script src="app.js"></script></body></html>
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>World Cup AI Pro V7</title><link rel="stylesheet" href="styles.css"/></head><body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><div class="logo">WAI</div><div><b>World Cup AI</b><span>Pro Terminal</span></div></div>
+  <nav>
+    <button class="nav active" data-view="dashboard" onclick="setView('dashboard')">Dashboard</button>
+    <button class="nav" data-view="picks" onclick="setView('picks')">Pronostics MPP</button>
+    <button class="nav" data-view="matches" onclick="setView('matches')">Match Board</button>
+    <button class="nav" data-view="strategy" onclick="setView('strategy')">Stratégie</button>
+  </nav>
+  <div class="side-card"><span>Mode</span><select id="mode" onchange="render()"><option value="balanced">Équilibré</option><option value="safe">Safe</option><option value="comeback">Remontada</option></select></div>
+</aside>
+<main class="main">
+  <header class="top">
+    <div><span class="eyebrow">Executive MPP Platform</span><h1 id="pageTitle">Dashboard</h1><p id="pageSubtitle">La décision utile, sans bruit.</p></div>
+    <button onclick="copyAll()">Copier les pronos MPP</button>
+  </header>
+  <section id="dashboard" class="view active">
+    <div class="hero-grid">
+      <div class="hero panel"><span class="eyebrow">Action immédiate</span><h2>Les picks à mettre maintenant.</h2><div id="actionCards" class="action-cards"></div></div>
+      <div id="prime" class="prime panel"></div>
+    </div>
+    <div class="kpis"><div><span>Matchs</span><b id="k1"></b></div><div><span>À jouer</span><b id="k2"></b></div><div><span>Safe</span><b id="k3"></b></div><div><span>Risques</span><b id="k4"></b></div></div>
+    <div class="two-col"><div class="panel"><span class="eyebrow">Top 5</span><div id="top5"></div></div><div class="panel"><span class="eyebrow">Alertes</span><div id="alerts"></div></div></div>
+  </section>
+  <section id="picks" class="view"><div class="panel"><div class="panel-head"><div><span class="eyebrow">Décision MPP</span><h2>Tableau des pronostics</h2></div><input id="searchPicks" placeholder="Recherche..." oninput="render()"/></div><div id="decisionTable" class="decision-table"></div></div></section>
+  <section id="matches" class="view"><div class="panel"><span class="eyebrow">Match Board</span><h2>Tous les matchs détaillés</h2><div id="matchRows"></div></div></section>
+  <section id="strategy" class="view"><div class="strategy-grid"><div class="panel big"><span class="eyebrow">Stratégie recommandée</span><h2 id="strategyTitle"></h2><p id="strategyText"></p><div id="strategyBlocks" class="strategy-blocks"></div></div><div class="panel"><span class="eyebrow">Règle MPP</span><h2>Ne joue pas tout.</h2><p>Le but n’est pas de prédire chaque match, mais de choisir les bons écarts au bon moment.</p></div></div></section>
+</main>
+</div><script src="app.js"></script></body></html>

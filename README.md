@@ -1,5 +1,5 @@
-# World Cup AI Pro — V6 Clarity
+# World Cup AI Pro — V7 SaaS
 
-Lecture rapide et encadrés mieux délimités.
+Vraie plateforme avec navigation, écrans, tableau MPP et lecture rapide.
 
 Remplacer : index.html, styles.css, app.js, README.md
