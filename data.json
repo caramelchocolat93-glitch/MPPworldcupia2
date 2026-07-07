@@ -2,65 +2,64 @@
   "meta": {
     "brand": "PREDIKT",
     "tagline": "Des décisions éclairées par l'IA.",
-    "last_updated": "2026-07-06 14:30",
-    "source": "PREDIKT schedule complete v8.1",
-    "sync_mode": "auto-refresh ready"
+    "last_updated": "2026-07-07 09:55",
+    "source": "PREDIKT sync update — results included",
+    "sync_mode": "auto-refresh ready",
+    "notes": "Portugal 0-1 Espagne ; États-Unis 1-4 Belgique ; quart mis à jour : Espagne - Belgique."
   },
   "matches": [
     {
-      "id": "por-esp",
+      "id": "por-esp-done",
       "date": "06/07",
       "time": "21:00",
       "stage": "8e de finale",
-      "match": "Portugal - Espagne",
-      "pick": "Espagne",
-      "score": "1-2",
-      "alt": "1-1",
-      "conf": 56,
-      "rel": 5.8,
-      "risk": "Élevé",
-      "action": "ÉVITER SAFE",
-      "type": "TRAP",
+      "match": "Portugal 0-1 Espagne",
+      "pick": "Terminé",
+      "score": "0-1",
+      "alt": "—",
+      "conf": 0,
+      "rel": 0,
+      "risk": "Terminé",
+      "action": "TERMINÉ",
+      "type": "DONE",
       "qualif": "Espagne",
       "p": [
-        32,
-        27,
-        41
+        0,
+        0,
+        0
       ],
-      "why": "Espagne légèrement devant, mais marge très faible. Match à ne pas surconfiancer.",
+      "why": "Match terminé : l’Espagne s’est qualifiée pour les quarts de finale.",
       "signals": [
-        "Piège",
-        "Risque nul",
-        "Marge faible",
-        "Volatil"
+        "Résultat officiel",
+        "Espagne qualifiée",
+        "Match clôturé"
       ]
     },
     {
-      "id": "usa-bel",
+      "id": "usa-bel-done",
       "date": "07/07",
       "time": "02:00",
       "stage": "8e de finale",
-      "match": "États-Unis - Belgique",
-      "pick": "États-Unis",
-      "score": "2-1",
-      "alt": "1-1",
-      "conf": 59,
-      "rel": 6.1,
-      "risk": "Moyen+",
-      "action": "REMONTADA",
-      "type": "VALUE",
-      "qualif": "États-Unis",
+      "match": "États-Unis 1-4 Belgique",
+      "pick": "Terminé",
+      "score": "1-4",
+      "alt": "—",
+      "conf": 0,
+      "rel": 0,
+      "risk": "Terminé",
+      "action": "TERMINÉ",
+      "type": "DONE",
+      "qualif": "Belgique",
       "p": [
-        43,
-        25,
-        32
+        0,
+        0,
+        0
       ],
-      "why": "Value pick intéressant pour se différencier. Belgique dangereuse.",
+      "why": "Match terminé : la Belgique s’est qualifiée largement face aux États-Unis.",
       "signals": [
-        "Value",
-        "Contexte USA",
-        "Match ouvert",
-        "Différenciation"
+        "Résultat officiel",
+        "Belgique qualifiée",
+        "Score large"
       ]
     },
     {
@@ -83,7 +82,7 @@
         19,
         12
       ],
-      "why": "Pick le plus propre : avantage net en expérience, qualité individuelle et contrôle du tempo.",
+      "why": "Pick le plus propre du jour : avantage net en expérience, qualité individuelle et contrôle du tempo.",
       "signals": [
         "Écart de niveau",
         "Expérience",
@@ -111,7 +110,7 @@
         28,
         37
       ],
-      "why": "Match très équilibré. Risque de prolongation élevé.",
+      "why": "Match très équilibré. Colombie plus explosive, Suisse plus structurée. Risque de prolongation élevé.",
       "signals": [
         "Équilibré",
         "Suisse solide",
@@ -139,7 +138,7 @@
         24,
         18
       ],
-      "why": "France favorite, mais Maroc dangereux. Score serré conseillé.",
+      "why": "France favorite, mais Maroc dangereux en bloc bas et transitions. Score serré conseillé.",
       "signals": [
         "Favori solide",
         "Bloc marocain",
@@ -148,30 +147,31 @@
       ]
     },
     {
-      "id": "qf-por-usa",
+      "id": "esp-bel",
       "date": "10/07",
       "time": "21:00",
       "stage": "Quart de finale",
-      "match": "Vainqueur Portugal/Espagne - Vainqueur USA/Belgique",
-      "pick": "À attendre",
-      "score": "—",
-      "alt": "—",
-      "conf": 0,
-      "rel": 0,
-      "risk": "À attendre",
-      "action": "ATTENDRE",
-      "type": "WAIT",
-      "qualif": "À confirmer",
+      "match": "Espagne - Belgique",
+      "pick": "Espagne",
+      "score": "2-1",
+      "alt": "1-1",
+      "conf": 57,
+      "rel": 6.0,
+      "risk": "Moyen+",
+      "action": "PRUDENCE",
+      "type": "BALANCED",
+      "qualif": "Espagne",
       "p": [
-        0,
-        0,
-        0
+        44,
+        25,
+        31
       ],
-      "why": "Les qualifiés ne sont pas connus. Ne pas verrouiller ce match avant les résultats.",
+      "why": "L’Espagne reste légèrement devant, mais la Belgique arrive avec un gros signal offensif après son 4-1 contre les États-Unis. Pick jouable, mais pas safe.",
       "signals": [
-        "Qualifiés inconnus",
-        "À recalculer",
-        "Dépend du tableau"
+        "Espagne qualifiée",
+        "Belgique en confiance",
+        "Risque offensif belge",
+        "Match serré"
       ]
     },
     {
@@ -194,7 +194,7 @@
         27,
         43
       ],
-      "why": "Angleterre plus complète, mais Norvège très dangereuse.",
+      "why": "Angleterre plus complète, mais Norvège très dangereuse. Pick jouable, pas safe.",
       "signals": [
         "Haaland",
         "Collectif anglais",
@@ -234,7 +234,7 @@
       "date": "14/07",
       "time": "21:00",
       "stage": "Demi-finale",
-      "match": "Vainqueur QF France/Maroc - Vainqueur QF Portugal/Espagne/USA/Belgique",
+      "match": "Vainqueur France/Maroc - Vainqueur Espagne/Belgique",
       "pick": "À attendre",
       "score": "—",
       "alt": "—",
@@ -261,7 +261,7 @@
       "date": "15/07",
       "time": "21:00",
       "stage": "Demi-finale",
-      "match": "Vainqueur QF Norvège/Angleterre - Vainqueur QF Argentine/Égypte/Suisse/Colombie",
+      "match": "Vainqueur Norvège/Angleterre - Vainqueur Argentine/Égypte/Suisse/Colombie",
       "pick": "À attendre",
       "score": "—",
       "alt": "—",
@@ -330,7 +330,7 @@
         0,
         0
       ],
-      "why": "Finale à recalculer dès que les finalistes sont connus, avec fatigue, suspensions et dynamique actualisées.",
+      "why": "Finale à recalculer dès que les finalistes sont connus.",
       "signals": [
         "Finalistes inconnus",
         "Pression finale",
