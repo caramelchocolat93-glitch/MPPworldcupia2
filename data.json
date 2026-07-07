@@ -2,92 +2,36 @@
   "meta": {
     "brand": "PREDIKT",
     "tagline": "Des décisions éclairées par l'IA.",
-    "last_updated": "2026-07-06 14:00",
-    "source": "PREDIKT static sync v8",
+    "last_updated": "2026-07-06 14:30",
+    "source": "PREDIKT schedule complete v8.1",
     "sync_mode": "auto-refresh ready"
   },
   "matches": [
     {
-      "id": "arg-egy",
-      "date": "07/07",
-      "time": "18:00",
+      "id": "por-esp",
+      "date": "06/07",
+      "time": "21:00",
       "stage": "8e de finale",
-      "match": "Argentine - Égypte",
-      "pick": "Argentine",
-      "score": "2-0",
-      "alt": "3-1",
-      "conf": 78,
-      "rel": 8.4,
-      "risk": "Faible",
-      "action": "JOUER",
-      "type": "SAFE",
-      "qualif": "Argentine",
-      "p": [
-        69,
-        19,
-        12
-      ],
-      "why": "Pick le plus propre : avantage net en expérience, qualité individuelle et contrôle du tempo.",
-      "signals": [
-        "Écart de niveau",
-        "Expérience",
-        "Contrôle",
-        "Priorité MPP"
-      ]
-    },
-    {
-      "id": "fra-mar",
-      "date": "09/07",
-      "time": "22:00",
-      "stage": "Quart de finale",
-      "match": "France - Maroc",
-      "pick": "France",
-      "score": "2-1",
-      "alt": "1-0",
-      "conf": 72,
-      "rel": 7.6,
-      "risk": "Moyen",
-      "action": "JOUER",
-      "type": "CORE",
-      "qualif": "France",
-      "p": [
-        58,
-        24,
-        18
-      ],
-      "why": "France favorite, mais Maroc dangereux. Score serré conseillé.",
-      "signals": [
-        "Favori solide",
-        "Bloc marocain",
-        "Transitions",
-        "Score serré"
-      ]
-    },
-    {
-      "id": "nor-eng",
-      "date": "11/07",
-      "time": "23:00",
-      "stage": "Quart de finale",
-      "match": "Norvège - Angleterre",
-      "pick": "Angleterre",
+      "match": "Portugal - Espagne",
+      "pick": "Espagne",
       "score": "1-2",
-      "alt": "2-2",
-      "conf": 60,
-      "rel": 6.4,
-      "risk": "Moyen+",
-      "action": "PRUDENCE",
-      "type": "BALANCED",
-      "qualif": "Angleterre",
+      "alt": "1-1",
+      "conf": 56,
+      "rel": 5.8,
+      "risk": "Élevé",
+      "action": "ÉVITER SAFE",
+      "type": "TRAP",
+      "qualif": "Espagne",
       "p": [
-        30,
+        32,
         27,
-        43
+        41
       ],
-      "why": "Angleterre plus complète, mais Norvège très dangereuse.",
+      "why": "Espagne légèrement devant, mais marge très faible. Match à ne pas surconfiancer.",
       "signals": [
-        "Haaland",
-        "Collectif anglais",
-        "Prolongation",
+        "Piège",
+        "Risque nul",
+        "Marge faible",
         "Volatil"
       ]
     },
@@ -120,31 +64,31 @@
       ]
     },
     {
-      "id": "por-esp",
-      "date": "06/07",
-      "time": "21:00",
+      "id": "arg-egy",
+      "date": "07/07",
+      "time": "18:00",
       "stage": "8e de finale",
-      "match": "Portugal - Espagne",
-      "pick": "Espagne",
-      "score": "1-2",
-      "alt": "1-1",
-      "conf": 56,
-      "rel": 5.8,
-      "risk": "Élevé",
-      "action": "ÉVITER SAFE",
-      "type": "TRAP",
-      "qualif": "Espagne",
+      "match": "Argentine - Égypte",
+      "pick": "Argentine",
+      "score": "2-0",
+      "alt": "3-1",
+      "conf": 78,
+      "rel": 8.4,
+      "risk": "Faible",
+      "action": "JOUER",
+      "type": "SAFE",
+      "qualif": "Argentine",
       "p": [
-        32,
-        27,
-        41
+        69,
+        19,
+        12
       ],
-      "why": "Espagne légèrement devant, mais marge très faible.",
+      "why": "Pick le plus propre : avantage net en expérience, qualité individuelle et contrôle du tempo.",
       "signals": [
-        "Piège",
-        "Risque nul",
-        "Marge faible",
-        "Volatil"
+        "Écart de niveau",
+        "Expérience",
+        "Contrôle",
+        "Priorité MPP"
       ]
     },
     {
@@ -176,11 +120,39 @@
       ]
     },
     {
-      "id": "qf1",
+      "id": "fra-mar",
+      "date": "09/07",
+      "time": "22:00",
+      "stage": "Quart de finale",
+      "match": "France - Maroc",
+      "pick": "France",
+      "score": "2-1",
+      "alt": "1-0",
+      "conf": 72,
+      "rel": 7.6,
+      "risk": "Moyen",
+      "action": "JOUER",
+      "type": "CORE",
+      "qualif": "France",
+      "p": [
+        58,
+        24,
+        18
+      ],
+      "why": "France favorite, mais Maroc dangereux. Score serré conseillé.",
+      "signals": [
+        "Favori solide",
+        "Bloc marocain",
+        "Transitions",
+        "Score serré"
+      ]
+    },
+    {
+      "id": "qf-por-usa",
       "date": "10/07",
       "time": "21:00",
       "stage": "Quart de finale",
-      "match": "Vainqueur POR/ESP - Vainqueur USA/BEL",
+      "match": "Vainqueur Portugal/Espagne - Vainqueur USA/Belgique",
       "pick": "À attendre",
       "score": "—",
       "alt": "—",
@@ -195,18 +167,47 @@
         0,
         0
       ],
-      "why": "Qualifiés inconnus. Ne pas verrouiller.",
+      "why": "Les qualifiés ne sont pas connus. Ne pas verrouiller ce match avant les résultats.",
       "signals": [
         "Qualifiés inconnus",
-        "À recalculer"
+        "À recalculer",
+        "Dépend du tableau"
       ]
     },
     {
-      "id": "qf2",
+      "id": "nor-eng",
+      "date": "11/07",
+      "time": "23:00",
+      "stage": "Quart de finale",
+      "match": "Norvège - Angleterre",
+      "pick": "Angleterre",
+      "score": "1-2",
+      "alt": "2-2",
+      "conf": 60,
+      "rel": 6.4,
+      "risk": "Moyen+",
+      "action": "PRUDENCE",
+      "type": "BALANCED",
+      "qualif": "Angleterre",
+      "p": [
+        30,
+        27,
+        43
+      ],
+      "why": "Angleterre plus complète, mais Norvège très dangereuse.",
+      "signals": [
+        "Haaland",
+        "Collectif anglais",
+        "Prolongation",
+        "Volatil"
+      ]
+    },
+    {
+      "id": "qf-arg-col",
       "date": "12/07",
       "time": "03:00",
       "stage": "Quart de finale",
-      "match": "Vainqueur ARG/EGY - Vainqueur SUI/COL",
+      "match": "Vainqueur Argentine/Égypte - Vainqueur Suisse/Colombie",
       "pick": "Argentine probable",
       "score": "2-1",
       "alt": "2-0",
@@ -221,11 +222,119 @@
         25,
         23
       ],
-      "why": "Si l’Argentine passe, elle sera favorite.",
+      "why": "Si l’Argentine passe, elle sera favorite. À recalculer dès que l’affiche est officielle.",
       "signals": [
         "Conditionnel",
         "Argentine favorite",
         "À confirmer"
+      ]
+    },
+    {
+      "id": "sf-1",
+      "date": "14/07",
+      "time": "21:00",
+      "stage": "Demi-finale",
+      "match": "Vainqueur QF France/Maroc - Vainqueur QF Portugal/Espagne/USA/Belgique",
+      "pick": "À attendre",
+      "score": "—",
+      "alt": "—",
+      "conf": 0,
+      "rel": 0,
+      "risk": "À attendre",
+      "action": "ATTENDRE",
+      "type": "WAIT",
+      "qualif": "À confirmer",
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "why": "Demi-finale à recalculer après les quarts. Trop d’inconnues : qualifiés, fatigue, suspensions et blessures.",
+      "signals": [
+        "Affiche inconnue",
+        "Fatigue à mesurer",
+        "À recalculer"
+      ]
+    },
+    {
+      "id": "sf-2",
+      "date": "15/07",
+      "time": "21:00",
+      "stage": "Demi-finale",
+      "match": "Vainqueur QF Norvège/Angleterre - Vainqueur QF Argentine/Égypte/Suisse/Colombie",
+      "pick": "À attendre",
+      "score": "—",
+      "alt": "—",
+      "conf": 0,
+      "rel": 0,
+      "risk": "À attendre",
+      "action": "ATTENDRE",
+      "type": "WAIT",
+      "qualif": "À confirmer",
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "why": "Demi-finale à recalculer après les quarts. Les scénarios changent fortement selon les qualifiés.",
+      "signals": [
+        "Affiche inconnue",
+        "Styles à confirmer",
+        "À recalculer"
+      ]
+    },
+    {
+      "id": "third-place",
+      "date": "18/07",
+      "time": "23:00",
+      "stage": "Petite finale",
+      "match": "Perdant demi-finale 1 - Perdant demi-finale 2",
+      "pick": "À attendre",
+      "score": "—",
+      "alt": "—",
+      "conf": 0,
+      "rel": 0,
+      "risk": "À attendre",
+      "action": "ATTENDRE",
+      "type": "WAIT",
+      "qualif": "À confirmer",
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "why": "La petite finale dépend beaucoup de la motivation, des rotations et de l’état mental après les demies.",
+      "signals": [
+        "Motivation variable",
+        "Rotations possibles",
+        "À recalculer"
+      ]
+    },
+    {
+      "id": "final",
+      "date": "19/07",
+      "time": "21:00",
+      "stage": "Finale",
+      "match": "Vainqueur demi-finale 1 - Vainqueur demi-finale 2",
+      "pick": "À attendre",
+      "score": "—",
+      "alt": "—",
+      "conf": 0,
+      "rel": 0,
+      "risk": "À attendre",
+      "action": "ATTENDRE",
+      "type": "WAIT",
+      "qualif": "Champion à confirmer",
+      "p": [
+        0,
+        0,
+        0
+      ],
+      "why": "Finale à recalculer dès que les finalistes sont connus, avec fatigue, suspensions et dynamique actualisées.",
+      "signals": [
+        "Finalistes inconnus",
+        "Pression finale",
+        "À recalculer"
       ]
     }
   ]

@@ -1,18 +1,13 @@
-# PREDIKT — V8 Auto Sync Ready
+# PREDIKT V8.1 — Data complet
 
-Cette version ajoute :
-- chargement automatique depuis `data.json`
-- refresh toutes les 5 minutes
-- bouton Synchroniser
-- cache local si le fichier ne charge pas
-- écran Synchronisation
+Ce fichier corrige les matchs manquants :
+- demi-finale 1
+- demi-finale 2
+- petite finale
+- finale
 
-Fichiers à mettre à la racine GitHub :
-- index.html
-- styles.css
-- app.js
-- data.json
-- README.md
-
-Important : cette V8 actualise automatiquement l’app quand `data.json` change.
-La V9 ajoutera une vraie source API/backend pour mettre `data.json` à jour sans intervention.
+À faire :
+1. Remplacer uniquement `data.json` dans GitHub.
+2. Commit.
+3. Vercel redéploie.
+4. L’app recharge automatiquement les données.
