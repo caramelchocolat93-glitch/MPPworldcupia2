@@ -1,5 +1,5 @@
-# PREDIKT V9 — Intelligence Engine
+# PREDIKT V9.2 — Source-Aware Engine
 
-Ajouts : PREDIKT Score recalculé, pondérations, écran Engine, écran Changements, cotes prêtes à brancher API.
+Ajouts : sources.json, écran Sources, source coverage par match, PREDIKT Score ajusté selon couverture sources.
 
-Fichiers : index.html, styles.css, app.js, engine.js, data.json, README.md
+Fichiers : index.html, styles.css, app.js, engine.js, data.json, sources.json, README.md

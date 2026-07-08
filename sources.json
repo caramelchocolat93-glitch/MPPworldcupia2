@@ -1,0 +1,116 @@
+{
+  "sources": [
+    {
+      "id": "fifa",
+      "name": "FIFA",
+      "category": "Résultats officiels / calendrier",
+      "status": "ready_to_connect",
+      "legal": "API ou flux officiel/licence",
+      "weight": 10
+    },
+    {
+      "id": "opta",
+      "name": "Opta",
+      "category": "Données avancées premium",
+      "status": "license_required",
+      "legal": "Licence commerciale requise",
+      "weight": 10
+    },
+    {
+      "id": "statsbomb",
+      "name": "StatsBomb",
+      "category": "xG / event data",
+      "status": "license_required",
+      "legal": "Licence commerciale ou open data limitée",
+      "weight": 8
+    },
+    {
+      "id": "fbref",
+      "name": "FBref",
+      "category": "Stats équipes/joueurs",
+      "status": "manual_or_partner",
+      "legal": "Respect conditions d’utilisation",
+      "weight": 6
+    },
+    {
+      "id": "understat",
+      "name": "Understat",
+      "category": "xG historiques",
+      "status": "manual_or_partner",
+      "legal": "Respect conditions d’utilisation",
+      "weight": 5
+    },
+    {
+      "id": "sofascore",
+      "name": "Sofascore",
+      "category": "Forme / notes / calendrier",
+      "status": "manual_or_partner",
+      "legal": "Pas de scraping non autorisé",
+      "weight": 5
+    },
+    {
+      "id": "fotmob",
+      "name": "FotMob",
+      "category": "Forme / compos / live",
+      "status": "manual_or_partner",
+      "legal": "Pas de scraping non autorisé",
+      "weight": 5
+    },
+    {
+      "id": "transfermarkt",
+      "name": "Transfermarkt",
+      "category": "Valeur effectif / blessures",
+      "status": "manual_or_partner",
+      "legal": "Respect conditions d’utilisation",
+      "weight": 5
+    },
+    {
+      "id": "elo",
+      "name": "Elo Ratings",
+      "category": "Niveau équipes",
+      "status": "ready_to_connect",
+      "legal": "Source publique/licite selon fournisseur",
+      "weight": 10
+    },
+    {
+      "id": "api_football",
+      "name": "API-Football",
+      "category": "Matchs / stats / blessures / lineups",
+      "status": "api_key_required",
+      "legal": "Clé API / abonnement",
+      "weight": 15
+    },
+    {
+      "id": "football_data",
+      "name": "Football-Data.org",
+      "category": "Calendrier / résultats",
+      "status": "api_key_required",
+      "legal": "Clé API / plan autorisé",
+      "weight": 8
+    },
+    {
+      "id": "bookmakers",
+      "name": "Cotes bookmakers légales",
+      "category": "Marché / odds",
+      "status": "api_key_required",
+      "legal": "The Odds API ou fournisseur légal",
+      "weight": 12
+    },
+    {
+      "id": "weather",
+      "name": "Données météo",
+      "category": "Météo match",
+      "status": "api_key_required",
+      "legal": "OpenWeather / WeatherAPI / Meteostat",
+      "weight": 3
+    },
+    {
+      "id": "injuries",
+      "name": "Blessures / suspensions",
+      "category": "Disponibilité joueurs",
+      "status": "api_or_manual_required",
+      "legal": "API autorisée ou saisie manuelle vérifiée",
+      "weight": 8
+    }
+  ]
+}
