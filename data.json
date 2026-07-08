@@ -2,23 +2,51 @@
   "meta": {
     "brand": "PREDIKT",
     "tagline": "Des décisions éclairées par l'IA.",
-    "last_updated": "2026-07-07 09:55",
-    "source": "PREDIKT sync update — results included",
-    "sync_mode": "auto-refresh ready",
-    "notes": "Portugal 0-1 Espagne ; États-Unis 1-4 Belgique ; quart mis à jour : Espagne - Belgique."
+    "last_updated": "2026-07-07 10:45",
+    "source": "PREDIKT Intelligence Engine V9",
+    "sync_mode": "engine recalculation",
+    "notes": "Résultats intégrés : Portugal 0-1 Espagne, États-Unis 1-4 Belgique. Quart confirmé : Espagne - Belgique."
   },
+  "weights": {
+    "form": 0.2,
+    "level": 0.2,
+    "market": 0.2,
+    "squad": 0.15,
+    "fatigue": 0.1,
+    "advanced": 0.1,
+    "context": 0.05
+  },
+  "changes": [
+    {
+      "time": "07/07 02:00",
+      "type": "Résultat",
+      "event": "États-Unis 1-4 Belgique",
+      "impact": "Belgique qualifiée ; USA supprimé des picks actifs ; Espagne-Belgique créé."
+    },
+    {
+      "time": "06/07 21:00",
+      "type": "Résultat",
+      "event": "Portugal 0-1 Espagne",
+      "impact": "Espagne qualifiée ; Portugal supprimé des picks actifs."
+    },
+    {
+      "time": "07/07 10:45",
+      "type": "Moteur",
+      "event": "PREDIKT Score recalculé",
+      "impact": "Recommandations recalculées avec forme, marché, effectif, fatigue et contexte."
+    }
+  ],
   "matches": [
     {
       "id": "por-esp-done",
+      "status": "done",
       "date": "06/07",
       "time": "21:00",
-      "stage": "8e de finale",
+      "stage": "8e",
       "match": "Portugal 0-1 Espagne",
       "pick": "Terminé",
       "score": "0-1",
       "alt": "—",
-      "conf": 0,
-      "rel": 0,
       "risk": "Terminé",
       "action": "TERMINÉ",
       "type": "DONE",
@@ -28,7 +56,22 @@
         0,
         0
       ],
-      "why": "Match terminé : l’Espagne s’est qualifiée pour les quarts de finale.",
+      "model": {
+        "form": 0,
+        "level": 0,
+        "market": 0,
+        "squad": 0,
+        "fatigue": 0,
+        "advanced": 0,
+        "context": 0
+      },
+      "odds": {
+        "home": 0,
+        "draw": 0,
+        "away": 0,
+        "trend": "closed"
+      },
+      "why": "Match terminé : l’Espagne s’est qualifiée.",
       "signals": [
         "Résultat officiel",
         "Espagne qualifiée",
@@ -37,15 +80,14 @@
     },
     {
       "id": "usa-bel-done",
+      "status": "done",
       "date": "07/07",
       "time": "02:00",
-      "stage": "8e de finale",
+      "stage": "8e",
       "match": "États-Unis 1-4 Belgique",
       "pick": "Terminé",
       "score": "1-4",
       "alt": "—",
-      "conf": 0,
-      "rel": 0,
       "risk": "Terminé",
       "action": "TERMINÉ",
       "type": "DONE",
@@ -55,7 +97,22 @@
         0,
         0
       ],
-      "why": "Match terminé : la Belgique s’est qualifiée largement face aux États-Unis.",
+      "model": {
+        "form": 0,
+        "level": 0,
+        "market": 0,
+        "squad": 0,
+        "fatigue": 0,
+        "advanced": 0,
+        "context": 0
+      },
+      "odds": {
+        "home": 0,
+        "draw": 0,
+        "away": 0,
+        "trend": "closed"
+      },
+      "why": "Match terminé : la Belgique s’est qualifiée largement.",
       "signals": [
         "Résultat officiel",
         "Belgique qualifiée",
@@ -64,15 +121,14 @@
     },
     {
       "id": "arg-egy",
+      "status": "scheduled",
       "date": "07/07",
       "time": "18:00",
-      "stage": "8e de finale",
+      "stage": "8e",
       "match": "Argentine - Égypte",
       "pick": "Argentine",
       "score": "2-0",
       "alt": "3-1",
-      "conf": 78,
-      "rel": 8.4,
       "risk": "Faible",
       "action": "JOUER",
       "type": "SAFE",
@@ -82,6 +138,21 @@
         19,
         12
       ],
+      "model": {
+        "form": 86,
+        "level": 91,
+        "market": 84,
+        "squad": 88,
+        "fatigue": 80,
+        "advanced": 86,
+        "context": 82
+      },
+      "odds": {
+        "home": 1.48,
+        "draw": 4.1,
+        "away": 7.0,
+        "trend": "stable"
+      },
       "why": "Pick le plus propre du jour : avantage net en expérience, qualité individuelle et contrôle du tempo.",
       "signals": [
         "Écart de niveau",
@@ -92,15 +163,14 @@
     },
     {
       "id": "sui-col",
+      "status": "scheduled",
       "date": "07/07",
       "time": "22:00",
-      "stage": "8e de finale",
+      "stage": "8e",
       "match": "Suisse - Colombie",
       "pick": "Colombie",
       "score": "1-2",
       "alt": "1-1",
-      "conf": 54,
-      "rel": 5.2,
       "risk": "Élevé",
       "action": "ÉVITER SAFE",
       "type": "TRAP",
@@ -110,7 +180,22 @@
         28,
         37
       ],
-      "why": "Match très équilibré. Colombie plus explosive, Suisse plus structurée. Risque de prolongation élevé.",
+      "model": {
+        "form": 61,
+        "level": 58,
+        "market": 55,
+        "squad": 60,
+        "fatigue": 62,
+        "advanced": 57,
+        "context": 54
+      },
+      "odds": {
+        "home": 2.85,
+        "draw": 3.1,
+        "away": 2.55,
+        "trend": "volatile"
+      },
+      "why": "Match très équilibré. Colombie plus explosive, Suisse plus structurée.",
       "signals": [
         "Équilibré",
         "Suisse solide",
@@ -120,15 +205,14 @@
     },
     {
       "id": "fra-mar",
+      "status": "scheduled",
       "date": "09/07",
       "time": "22:00",
-      "stage": "Quart de finale",
+      "stage": "Quart",
       "match": "France - Maroc",
       "pick": "France",
       "score": "2-1",
       "alt": "1-0",
-      "conf": 72,
-      "rel": 7.6,
       "risk": "Moyen",
       "action": "JOUER",
       "type": "CORE",
@@ -138,6 +222,21 @@
         24,
         18
       ],
+      "model": {
+        "form": 79,
+        "level": 86,
+        "market": 78,
+        "squad": 84,
+        "fatigue": 74,
+        "advanced": 80,
+        "context": 76
+      },
+      "odds": {
+        "home": 1.78,
+        "draw": 3.45,
+        "away": 4.8,
+        "trend": "stable"
+      },
       "why": "France favorite, mais Maroc dangereux en bloc bas et transitions. Score serré conseillé.",
       "signals": [
         "Favori solide",
@@ -148,15 +247,14 @@
     },
     {
       "id": "esp-bel",
+      "status": "scheduled",
       "date": "10/07",
       "time": "21:00",
-      "stage": "Quart de finale",
+      "stage": "Quart",
       "match": "Espagne - Belgique",
       "pick": "Espagne",
       "score": "2-1",
       "alt": "1-1",
-      "conf": 57,
-      "rel": 6.0,
       "risk": "Moyen+",
       "action": "PRUDENCE",
       "type": "BALANCED",
@@ -166,7 +264,22 @@
         25,
         31
       ],
-      "why": "L’Espagne reste légèrement devant, mais la Belgique arrive avec un gros signal offensif après son 4-1 contre les États-Unis. Pick jouable, mais pas safe.",
+      "model": {
+        "form": 72,
+        "level": 75,
+        "market": 66,
+        "squad": 73,
+        "fatigue": 67,
+        "advanced": 70,
+        "context": 64
+      },
+      "odds": {
+        "home": 2.05,
+        "draw": 3.35,
+        "away": 3.55,
+        "trend": "belgium_up"
+      },
+      "why": "Espagne légèrement devant, mais Belgique boostée après son 4-1. Pick jouable, pas safe.",
       "signals": [
         "Espagne qualifiée",
         "Belgique en confiance",
@@ -176,15 +289,14 @@
     },
     {
       "id": "nor-eng",
+      "status": "scheduled",
       "date": "11/07",
       "time": "23:00",
-      "stage": "Quart de finale",
+      "stage": "Quart",
       "match": "Norvège - Angleterre",
       "pick": "Angleterre",
       "score": "1-2",
       "alt": "2-2",
-      "conf": 60,
-      "rel": 6.4,
       "risk": "Moyen+",
       "action": "PRUDENCE",
       "type": "BALANCED",
@@ -194,7 +306,22 @@
         27,
         43
       ],
-      "why": "Angleterre plus complète, mais Norvège très dangereuse. Pick jouable, pas safe.",
+      "model": {
+        "form": 68,
+        "level": 77,
+        "market": 69,
+        "squad": 78,
+        "fatigue": 65,
+        "advanced": 71,
+        "context": 63
+      },
+      "odds": {
+        "home": 3.05,
+        "draw": 3.35,
+        "away": 2.25,
+        "trend": "stable"
+      },
+      "why": "Angleterre plus complète, mais Norvège dangereuse. Pick jouable, pas safe.",
       "signals": [
         "Haaland",
         "Collectif anglais",
@@ -204,15 +331,14 @@
     },
     {
       "id": "qf-arg-col",
+      "status": "conditional",
       "date": "12/07",
       "time": "03:00",
-      "stage": "Quart de finale",
+      "stage": "Quart",
       "match": "Vainqueur Argentine/Égypte - Vainqueur Suisse/Colombie",
       "pick": "Argentine probable",
       "score": "2-1",
       "alt": "2-0",
-      "conf": 66,
-      "rel": 6.8,
       "risk": "À confirmer",
       "action": "SOUS CONDITION",
       "type": "BRACKET",
@@ -222,6 +348,21 @@
         25,
         23
       ],
+      "model": {
+        "form": 70,
+        "level": 78,
+        "market": 68,
+        "squad": 76,
+        "fatigue": 67,
+        "advanced": 72,
+        "context": 65
+      },
+      "odds": {
+        "home": 0,
+        "draw": 0,
+        "away": 0,
+        "trend": "pending"
+      },
       "why": "Si l’Argentine passe, elle sera favorite. À recalculer dès que l’affiche est officielle.",
       "signals": [
         "Conditionnel",
@@ -231,15 +372,14 @@
     },
     {
       "id": "sf-1",
+      "status": "pending",
       "date": "14/07",
       "time": "21:00",
-      "stage": "Demi-finale",
+      "stage": "Demi",
       "match": "Vainqueur France/Maroc - Vainqueur Espagne/Belgique",
       "pick": "À attendre",
       "score": "—",
       "alt": "—",
-      "conf": 0,
-      "rel": 0,
       "risk": "À attendre",
       "action": "ATTENDRE",
       "type": "WAIT",
@@ -249,7 +389,22 @@
         0,
         0
       ],
-      "why": "Demi-finale à recalculer après les quarts. Trop d’inconnues : qualifiés, fatigue, suspensions et blessures.",
+      "model": {
+        "form": 0,
+        "level": 0,
+        "market": 0,
+        "squad": 0,
+        "fatigue": 0,
+        "advanced": 0,
+        "context": 0
+      },
+      "odds": {
+        "home": 0,
+        "draw": 0,
+        "away": 0,
+        "trend": "pending"
+      },
+      "why": "Demi-finale à recalculer après les quarts.",
       "signals": [
         "Affiche inconnue",
         "Fatigue à mesurer",
@@ -258,15 +413,14 @@
     },
     {
       "id": "sf-2",
+      "status": "pending",
       "date": "15/07",
       "time": "21:00",
-      "stage": "Demi-finale",
+      "stage": "Demi",
       "match": "Vainqueur Norvège/Angleterre - Vainqueur Argentine/Égypte/Suisse/Colombie",
       "pick": "À attendre",
       "score": "—",
       "alt": "—",
-      "conf": 0,
-      "rel": 0,
       "risk": "À attendre",
       "action": "ATTENDRE",
       "type": "WAIT",
@@ -276,7 +430,22 @@
         0,
         0
       ],
-      "why": "Demi-finale à recalculer après les quarts. Les scénarios changent fortement selon les qualifiés.",
+      "model": {
+        "form": 0,
+        "level": 0,
+        "market": 0,
+        "squad": 0,
+        "fatigue": 0,
+        "advanced": 0,
+        "context": 0
+      },
+      "odds": {
+        "home": 0,
+        "draw": 0,
+        "away": 0,
+        "trend": "pending"
+      },
+      "why": "Demi-finale à recalculer après les quarts.",
       "signals": [
         "Affiche inconnue",
         "Styles à confirmer",
@@ -285,6 +454,7 @@
     },
     {
       "id": "third-place",
+      "status": "pending",
       "date": "18/07",
       "time": "23:00",
       "stage": "Petite finale",
@@ -292,8 +462,6 @@
       "pick": "À attendre",
       "score": "—",
       "alt": "—",
-      "conf": 0,
-      "rel": 0,
       "risk": "À attendre",
       "action": "ATTENDRE",
       "type": "WAIT",
@@ -303,7 +471,22 @@
         0,
         0
       ],
-      "why": "La petite finale dépend beaucoup de la motivation, des rotations et de l’état mental après les demies.",
+      "model": {
+        "form": 0,
+        "level": 0,
+        "market": 0,
+        "squad": 0,
+        "fatigue": 0,
+        "advanced": 0,
+        "context": 0
+      },
+      "odds": {
+        "home": 0,
+        "draw": 0,
+        "away": 0,
+        "trend": "pending"
+      },
+      "why": "La petite finale dépend beaucoup de la motivation et des rotations.",
       "signals": [
         "Motivation variable",
         "Rotations possibles",
@@ -312,6 +495,7 @@
     },
     {
       "id": "final",
+      "status": "pending",
       "date": "19/07",
       "time": "21:00",
       "stage": "Finale",
@@ -319,8 +503,6 @@
       "pick": "À attendre",
       "score": "—",
       "alt": "—",
-      "conf": 0,
-      "rel": 0,
       "risk": "À attendre",
       "action": "ATTENDRE",
       "type": "WAIT",
@@ -330,6 +512,21 @@
         0,
         0
       ],
+      "model": {
+        "form": 0,
+        "level": 0,
+        "market": 0,
+        "squad": 0,
+        "fatigue": 0,
+        "advanced": 0,
+        "context": 0
+      },
+      "odds": {
+        "home": 0,
+        "draw": 0,
+        "away": 0,
+        "trend": "pending"
+      },
       "why": "Finale à recalculer dès que les finalistes sont connus.",
       "signals": [
         "Finalistes inconnus",
