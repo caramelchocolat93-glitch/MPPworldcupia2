@@ -2,10 +2,10 @@
   "meta": {
     "brand": "PREDIKT",
     "tagline": "Des décisions éclairées par l'IA.",
-    "last_updated": "2026-07-08 11:20",
-    "source": "PREDIKT V10 — Clean Sources",
-    "sync_mode": "clean source governance",
-    "notes": "Wording sources nettoyé : plus de statut anxiogène, uniquement des statuts professionnels."
+    "last_updated": "2026-07-08 11:55",
+    "source": "PREDIKT V10.1 — Manual intelligence update",
+    "sync_mode": "manual web-informed update",
+    "notes": "Mise à jour manuelle après revue résultats, dynamique, marché/cotes, blessures/alertes, fatigue et sources disponibles."
   },
   "weights": {
     "form": 0.2,
@@ -16,6 +16,32 @@
     "advanced": 0.1,
     "context": 0.05
   },
+  "changes": [
+    {
+      "time": "08/07 11:55",
+      "type": "Marché",
+      "event": "France - Maroc renforcé côté France",
+      "impact": "France reste le pick principal, mais score bas privilégié."
+    },
+    {
+      "time": "08/07 11:55",
+      "type": "Effectif",
+      "event": "Belgique : Amadou Onana blessé gravement",
+      "impact": "Espagne garde l’avantage malgré la dynamique belge."
+    },
+    {
+      "time": "08/07 11:55",
+      "type": "Fatigue",
+      "event": "Norvège : signaux de fatigue/maladie dans le groupe",
+      "impact": "Avantage Angleterre légèrement renforcé, mais Haaland maintient le risque."
+    },
+    {
+      "time": "08/07 11:55",
+      "type": "Contexte",
+      "event": "Argentine qualifiée 3-2 après avoir été menée",
+      "impact": "Argentine favorite contre Suisse, mais prudence augmentée."
+    }
+  ],
   "matches": [
     {
       "id": "fra-mar",
@@ -25,25 +51,25 @@
       "stage": "Quart",
       "match": "France - Maroc",
       "pick": "France",
-      "score": "2-1",
-      "alt": "1-0",
+      "score": "1-0",
+      "alt": "2-1",
       "risk": "Moyen",
       "action": "JOUER",
       "type": "CORE",
       "qualif": "France",
       "p": [
-        58,
-        24,
-        18
+        62,
+        23,
+        15
       ],
       "model": {
-        "form": 79,
-        "level": 86,
-        "market": 78,
-        "squad": 84,
-        "fatigue": 74,
-        "advanced": 80,
-        "context": 76
+        "form": 82,
+        "level": 87,
+        "market": 82,
+        "squad": 85,
+        "fatigue": 76,
+        "advanced": 82,
+        "context": 78
       },
       "source_coverage": {
         "connected": [
@@ -67,12 +93,18 @@
           "fotmob"
         ]
       },
-      "why": "France favorite, mais Maroc dangereux en bloc bas et transitions. Score serré conseillé.",
+      "odds": {
+        "home": 1.72,
+        "draw": 3.5,
+        "away": 5.1,
+        "trend": "france_stable_under"
+      },
+      "why": "France reste le pick le plus propre : meilleure base défensive/offensive, marché favorable autour de France, et tendance à un match fermé. Le 1-0 devient légèrement plus cohérent que le 2-1.",
       "signals": [
-        "Favori solide",
-        "Bloc marocain",
-        "Transitions",
-        "Score serré"
+        "France favori marché",
+        "Maroc bloc bas",
+        "Under 2.5 crédible",
+        "Pick principal"
       ]
     },
     {
@@ -90,18 +122,18 @@
       "type": "BALANCED",
       "qualif": "Espagne",
       "p": [
-        44,
-        25,
-        31
+        45,
+        27,
+        28
       ],
       "model": {
-        "form": 72,
-        "level": 75,
-        "market": 66,
-        "squad": 73,
-        "fatigue": 67,
-        "advanced": 70,
-        "context": 64
+        "form": 76,
+        "level": 77,
+        "market": 68,
+        "squad": 70,
+        "fatigue": 68,
+        "advanced": 73,
+        "context": 67
       },
       "source_coverage": {
         "connected": [
@@ -125,12 +157,18 @@
           "weather"
         ]
       },
-      "why": "Espagne légèrement devant, mais Belgique boostée après son 4-1. Pick jouable, pas safe.",
+      "odds": {
+        "home": 2.05,
+        "draw": 3.35,
+        "away": 3.55,
+        "trend": "belgium_momentum_but_onana_out"
+      },
+      "why": "Espagne reste légèrement devant grâce à sa maîtrise et sa solidité défensive, mais la Belgique a envoyé un gros signal offensif. La blessure d’Onana réduit toutefois la projection belge au milieu.",
       "signals": [
-        "Espagne qualifiée",
-        "Belgique en confiance",
-        "Risque offensif belge",
-        "Match serré"
+        "Espagne clean sheets",
+        "Belgique 4-1 USA",
+        "Onana absent",
+        "Match à variance"
       ]
     },
     {
@@ -148,18 +186,18 @@
       "type": "BALANCED",
       "qualif": "Angleterre",
       "p": [
-        30,
+        29,
         27,
-        43
+        44
       ],
       "model": {
-        "form": 68,
-        "level": 77,
-        "market": 69,
-        "squad": 78,
-        "fatigue": 65,
-        "advanced": 71,
-        "context": 63
+        "form": 70,
+        "level": 79,
+        "market": 71,
+        "squad": 79,
+        "fatigue": 62,
+        "advanced": 72,
+        "context": 65
       },
       "source_coverage": {
         "connected": [
@@ -183,12 +221,18 @@
           "weather"
         ]
       },
-      "why": "Angleterre plus complète, mais Norvège dangereuse. Pick jouable, pas safe.",
+      "odds": {
+        "home": 3.1,
+        "draw": 3.35,
+        "away": 2.22,
+        "trend": "england_slight_up_norway_fatigue"
+      },
+      "why": "Angleterre garde l’avantage structurel. La Norvège reste dangereuse avec Haaland, mais les signaux de fatigue/maladie dans le groupe norvégien augmentent légèrement le risque côté Norvège.",
       "signals": [
-        "Haaland",
-        "Collectif anglais",
-        "Prolongation",
-        "Volatil"
+        "Angleterre plus complète",
+        "Norvège fatigue",
+        "Haaland danger",
+        "Prudence"
       ]
     },
     {
@@ -199,25 +243,25 @@
       "stage": "Quart",
       "match": "Argentine - Suisse",
       "pick": "Argentine",
-      "score": "2-1",
-      "alt": "1-0",
-      "risk": "Moyen+",
+      "score": "2-0",
+      "alt": "2-1",
+      "risk": "Moyen",
       "action": "JOUER AVEC PRUDENCE",
       "type": "CORE",
       "qualif": "Argentine",
       "p": [
-        52,
-        27,
-        21
+        54,
+        26,
+        20
       ],
       "model": {
-        "form": 72,
-        "level": 84,
-        "market": 76,
-        "squad": 82,
-        "fatigue": 60,
-        "advanced": 76,
-        "context": 68
+        "form": 74,
+        "level": 85,
+        "market": 78,
+        "squad": 83,
+        "fatigue": 62,
+        "advanced": 77,
+        "context": 70
       },
       "source_coverage": {
         "connected": [
@@ -241,12 +285,18 @@
           "weather"
         ]
       },
-      "why": "Argentine favorite, mais alerte défensive après le 3-2 contre l’Égypte. Suisse solide.",
+      "odds": {
+        "home": 1.72,
+        "draw": 3.6,
+        "away": 5.2,
+        "trend": "argentina_favorite_swiss_defense"
+      },
+      "why": "Argentine favorite, mais son 3-2 contre l’Égypte empêche d’en faire un pick premium. La Suisse n’a pas encaissé en phase à élimination directe et peut verrouiller le match.",
       "signals": [
         "Argentine favorite",
-        "Alerte défensive",
         "Suisse solide",
-        "Risque serré"
+        "BTTS non intéressant",
+        "Score bas possible"
       ]
     },
     {
@@ -298,7 +348,13 @@
           "transfermarkt"
         ]
       },
-      "why": "Demi-finale à recalculer après les quarts.",
+      "odds": {
+        "home": 0,
+        "draw": 0,
+        "away": 0,
+        "trend": "pending"
+      },
+      "why": "À recalculer dès que l’affiche est confirmée.",
       "signals": [
         "Affiche inconnue",
         "À recalculer"
@@ -353,7 +409,13 @@
           "transfermarkt"
         ]
       },
-      "why": "Demi-finale à recalculer après les quarts.",
+      "odds": {
+        "home": 0,
+        "draw": 0,
+        "away": 0,
+        "trend": "pending"
+      },
+      "why": "À recalculer dès que l’affiche est confirmée.",
       "signals": [
         "Affiche inconnue",
         "À recalculer"
@@ -408,9 +470,15 @@
           "transfermarkt"
         ]
       },
-      "why": "À recalculer après les demi-finales.",
+      "odds": {
+        "home": 0,
+        "draw": 0,
+        "away": 0,
+        "trend": "pending"
+      },
+      "why": "À recalculer dès que l’affiche est confirmée.",
       "signals": [
-        "Motivation variable",
+        "Affiche inconnue",
         "À recalculer"
       ]
     },
@@ -427,7 +495,7 @@
       "risk": "À attendre",
       "action": "ATTENDRE",
       "type": "WAIT",
-      "qualif": "Champion à confirmer",
+      "qualif": "À confirmer",
       "p": [
         0,
         0,
@@ -463,9 +531,15 @@
           "transfermarkt"
         ]
       },
-      "why": "Finale à recalculer dès que les finalistes sont connus.",
+      "odds": {
+        "home": 0,
+        "draw": 0,
+        "away": 0,
+        "trend": "pending"
+      },
+      "why": "À recalculer dès que l’affiche est confirmée.",
       "signals": [
-        "Finalistes inconnus",
+        "Affiche inconnue",
         "À recalculer"
       ]
     }

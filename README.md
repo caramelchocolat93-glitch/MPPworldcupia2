@@ -1,5 +1,5 @@
-# PREDIKT V10 — Clean Sources
+# PREDIKT V10.1 — Mise à jour manuelle 08/07
 
-Statuts sources nettoyés : Connectée prochainement, API requise, Licence premium, Source secondaire, Source à valider.
+Remplacer uniquement `data.json` dans GitHub.
 
-Fichiers : index.html, styles.css, app.js, engine.js, data.json, sources.json, README.md
+Mise à jour basée sur résultats, dynamique, marché/cotes disponibles, blessures/alertes, fatigue et contexte tournoi.
