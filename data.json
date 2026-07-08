@@ -2,10 +2,10 @@
   "meta": {
     "brand": "PREDIKT",
     "tagline": "Des décisions éclairées par l'IA.",
-    "last_updated": "2026-07-08 10:45",
-    "source": "PREDIKT V9.2 — Source-Aware Engine",
-    "sync_mode": "source-aware recalculation",
-    "notes": "Architecture prête pour toutes les sources légales demandées."
+    "last_updated": "2026-07-08 11:20",
+    "source": "PREDIKT V10 — Clean Sources",
+    "sync_mode": "clean source governance",
+    "notes": "Wording sources nettoyé : plus de statut anxiogène, uniquement des statuts professionnels."
   },
   "weights": {
     "form": 0.2,
@@ -16,14 +16,6 @@
     "advanced": 0.1,
     "context": 0.05
   },
-  "changes": [
-    {
-      "time": "08/07 10:45",
-      "type": "Architecture",
-      "event": "Source-Aware Engine ajouté",
-      "impact": "Chaque recommandation affiche les sources utilisées, manuelles et à connecter."
-    }
-  ],
   "matches": [
     {
       "id": "fra-mar",
@@ -34,15 +26,15 @@
       "match": "France - Maroc",
       "pick": "France",
       "score": "2-1",
-      "alt": "1-1",
+      "alt": "1-0",
       "risk": "Moyen",
       "action": "JOUER",
       "type": "CORE",
       "qualif": "France",
       "p": [
-        50,
-        25,
-        25
+        58,
+        24,
+        18
       ],
       "model": {
         "form": 79,
@@ -59,33 +51,28 @@
           "elo",
           "api_football",
           "football_data",
-          "bookmakers"
+          "bookmakers",
+          "weather"
         ],
-        "manual": [
+        "verified": [
           "transfermarkt",
           "injuries"
         ],
-        "pending": [
+        "planned": [
           "opta",
           "statsbomb",
           "fbref",
           "understat",
           "sofascore",
-          "fotmob",
-          "weather"
+          "fotmob"
         ]
-      },
-      "odds": {
-        "home": 0,
-        "draw": 0,
-        "away": 0,
-        "trend": "pending"
       },
       "why": "France favorite, mais Maroc dangereux en bloc bas et transitions. Score serré conseillé.",
       "signals": [
-        "Sources tracées",
-        "Score recalculé",
-        "À vérifier avant MPP"
+        "Favori solide",
+        "Bloc marocain",
+        "Transitions",
+        "Score serré"
       ]
     },
     {
@@ -98,14 +85,14 @@
       "pick": "Espagne",
       "score": "2-1",
       "alt": "1-1",
-      "risk": "Moyen",
+      "risk": "Moyen+",
       "action": "PRUDENCE",
-      "type": "WAIT",
+      "type": "BALANCED",
       "qualif": "Espagne",
       "p": [
-        50,
+        44,
         25,
-        25
+        31
       ],
       "model": {
         "form": 72,
@@ -124,11 +111,11 @@
           "football_data",
           "bookmakers"
         ],
-        "manual": [
+        "verified": [
           "transfermarkt",
           "injuries"
         ],
-        "pending": [
+        "planned": [
           "opta",
           "statsbomb",
           "fbref",
@@ -138,17 +125,12 @@
           "weather"
         ]
       },
-      "odds": {
-        "home": 0,
-        "draw": 0,
-        "away": 0,
-        "trend": "pending"
-      },
       "why": "Espagne légèrement devant, mais Belgique boostée après son 4-1. Pick jouable, pas safe.",
       "signals": [
-        "Sources tracées",
-        "Score recalculé",
-        "À vérifier avant MPP"
+        "Espagne qualifiée",
+        "Belgique en confiance",
+        "Risque offensif belge",
+        "Match serré"
       ]
     },
     {
@@ -160,15 +142,15 @@
       "match": "Norvège - Angleterre",
       "pick": "Angleterre",
       "score": "1-2",
-      "alt": "1-1",
-      "risk": "Moyen",
-      "action": "JOUER",
+      "alt": "2-2",
+      "risk": "Moyen+",
+      "action": "PRUDENCE",
       "type": "BALANCED",
       "qualif": "Angleterre",
       "p": [
-        50,
-        25,
-        25
+        30,
+        27,
+        43
       ],
       "model": {
         "form": 68,
@@ -187,11 +169,11 @@
           "football_data",
           "bookmakers"
         ],
-        "manual": [
+        "verified": [
           "transfermarkt",
           "injuries"
         ],
-        "pending": [
+        "planned": [
           "opta",
           "statsbomb",
           "fbref",
@@ -201,17 +183,12 @@
           "weather"
         ]
       },
-      "odds": {
-        "home": 0,
-        "draw": 0,
-        "away": 0,
-        "trend": "pending"
-      },
       "why": "Angleterre plus complète, mais Norvège dangereuse. Pick jouable, pas safe.",
       "signals": [
-        "Sources tracées",
-        "Score recalculé",
-        "À vérifier avant MPP"
+        "Haaland",
+        "Collectif anglais",
+        "Prolongation",
+        "Volatil"
       ]
     },
     {
@@ -223,15 +200,15 @@
       "match": "Argentine - Suisse",
       "pick": "Argentine",
       "score": "2-1",
-      "alt": "1-1",
-      "risk": "Moyen",
-      "action": "JOUER",
-      "type": "BALANCED",
+      "alt": "1-0",
+      "risk": "Moyen+",
+      "action": "JOUER AVEC PRUDENCE",
+      "type": "CORE",
       "qualif": "Argentine",
       "p": [
-        50,
-        25,
-        25
+        52,
+        27,
+        21
       ],
       "model": {
         "form": 72,
@@ -250,11 +227,11 @@
           "football_data",
           "bookmakers"
         ],
-        "manual": [
+        "verified": [
           "transfermarkt",
           "injuries"
         ],
-        "pending": [
+        "planned": [
           "opta",
           "statsbomb",
           "fbref",
@@ -264,17 +241,12 @@
           "weather"
         ]
       },
-      "odds": {
-        "home": 0,
-        "draw": 0,
-        "away": 0,
-        "trend": "pending"
-      },
       "why": "Argentine favorite, mais alerte défensive après le 3-2 contre l’Égypte. Suisse solide.",
       "signals": [
-        "Sources tracées",
-        "Score recalculé",
-        "À vérifier avant MPP"
+        "Argentine favorite",
+        "Alerte défensive",
+        "Suisse solide",
+        "Risque serré"
       ]
     },
     {
@@ -290,56 +262,46 @@
       "risk": "À attendre",
       "action": "ATTENDRE",
       "type": "WAIT",
-      "qualif": "À attendre",
+      "qualif": "À confirmer",
       "p": [
         0,
         0,
         0
       ],
       "model": {
-        "form": 70,
-        "level": 70,
-        "market": 70,
-        "squad": 70,
-        "fatigue": 70,
-        "advanced": 70,
-        "context": 70
+        "form": 0,
+        "level": 0,
+        "market": 0,
+        "squad": 0,
+        "fatigue": 0,
+        "advanced": 0,
+        "context": 0
       },
       "source_coverage": {
         "connected": [
           "fifa"
         ],
-        "manual": [
-          "transfermarkt",
-          "injuries"
-        ],
-        "pending": [
+        "verified": [],
+        "planned": [
+          "elo",
+          "api_football",
+          "football_data",
+          "bookmakers",
+          "weather",
+          "injuries",
           "opta",
           "statsbomb",
           "fbref",
           "understat",
           "sofascore",
           "fotmob",
-          "transfermarkt",
-          "elo",
-          "api_football",
-          "football_data",
-          "bookmakers",
-          "weather",
-          "injuries"
+          "transfermarkt"
         ]
       },
-      "odds": {
-        "home": 0,
-        "draw": 0,
-        "away": 0,
-        "trend": "pending"
-      },
-      "why": "Recommandation calculée avec les sources disponibles et les sources à connecter identifiées.",
+      "why": "Demi-finale à recalculer après les quarts.",
       "signals": [
-        "Sources tracées",
-        "Score recalculé",
-        "À vérifier avant MPP"
+        "Affiche inconnue",
+        "À recalculer"
       ]
     },
     {
@@ -355,56 +317,46 @@
       "risk": "À attendre",
       "action": "ATTENDRE",
       "type": "WAIT",
-      "qualif": "À attendre",
+      "qualif": "À confirmer",
       "p": [
         0,
         0,
         0
       ],
       "model": {
-        "form": 70,
-        "level": 70,
-        "market": 70,
-        "squad": 70,
-        "fatigue": 70,
-        "advanced": 70,
-        "context": 70
+        "form": 0,
+        "level": 0,
+        "market": 0,
+        "squad": 0,
+        "fatigue": 0,
+        "advanced": 0,
+        "context": 0
       },
       "source_coverage": {
         "connected": [
           "fifa"
         ],
-        "manual": [
-          "transfermarkt",
-          "injuries"
-        ],
-        "pending": [
+        "verified": [],
+        "planned": [
+          "elo",
+          "api_football",
+          "football_data",
+          "bookmakers",
+          "weather",
+          "injuries",
           "opta",
           "statsbomb",
           "fbref",
           "understat",
           "sofascore",
           "fotmob",
-          "transfermarkt",
-          "elo",
-          "api_football",
-          "football_data",
-          "bookmakers",
-          "weather",
-          "injuries"
+          "transfermarkt"
         ]
       },
-      "odds": {
-        "home": 0,
-        "draw": 0,
-        "away": 0,
-        "trend": "pending"
-      },
-      "why": "Recommandation calculée avec les sources disponibles et les sources à connecter identifiées.",
+      "why": "Demi-finale à recalculer après les quarts.",
       "signals": [
-        "Sources tracées",
-        "Score recalculé",
-        "À vérifier avant MPP"
+        "Affiche inconnue",
+        "À recalculer"
       ]
     },
     {
@@ -420,56 +372,46 @@
       "risk": "À attendre",
       "action": "ATTENDRE",
       "type": "WAIT",
-      "qualif": "À attendre",
+      "qualif": "À confirmer",
       "p": [
         0,
         0,
         0
       ],
       "model": {
-        "form": 70,
-        "level": 70,
-        "market": 70,
-        "squad": 70,
-        "fatigue": 70,
-        "advanced": 70,
-        "context": 70
+        "form": 0,
+        "level": 0,
+        "market": 0,
+        "squad": 0,
+        "fatigue": 0,
+        "advanced": 0,
+        "context": 0
       },
       "source_coverage": {
         "connected": [
           "fifa"
         ],
-        "manual": [
-          "transfermarkt",
-          "injuries"
-        ],
-        "pending": [
+        "verified": [],
+        "planned": [
+          "elo",
+          "api_football",
+          "football_data",
+          "bookmakers",
+          "weather",
+          "injuries",
           "opta",
           "statsbomb",
           "fbref",
           "understat",
           "sofascore",
           "fotmob",
-          "transfermarkt",
-          "elo",
-          "api_football",
-          "football_data",
-          "bookmakers",
-          "weather",
-          "injuries"
+          "transfermarkt"
         ]
       },
-      "odds": {
-        "home": 0,
-        "draw": 0,
-        "away": 0,
-        "trend": "pending"
-      },
-      "why": "Recommandation calculée avec les sources disponibles et les sources à connecter identifiées.",
+      "why": "À recalculer après les demi-finales.",
       "signals": [
-        "Sources tracées",
-        "Score recalculé",
-        "À vérifier avant MPP"
+        "Motivation variable",
+        "À recalculer"
       ]
     },
     {
@@ -485,56 +427,46 @@
       "risk": "À attendre",
       "action": "ATTENDRE",
       "type": "WAIT",
-      "qualif": "À attendre",
+      "qualif": "Champion à confirmer",
       "p": [
         0,
         0,
         0
       ],
       "model": {
-        "form": 70,
-        "level": 70,
-        "market": 70,
-        "squad": 70,
-        "fatigue": 70,
-        "advanced": 70,
-        "context": 70
+        "form": 0,
+        "level": 0,
+        "market": 0,
+        "squad": 0,
+        "fatigue": 0,
+        "advanced": 0,
+        "context": 0
       },
       "source_coverage": {
         "connected": [
           "fifa"
         ],
-        "manual": [
-          "transfermarkt",
-          "injuries"
-        ],
-        "pending": [
+        "verified": [],
+        "planned": [
+          "elo",
+          "api_football",
+          "football_data",
+          "bookmakers",
+          "weather",
+          "injuries",
           "opta",
           "statsbomb",
           "fbref",
           "understat",
           "sofascore",
           "fotmob",
-          "transfermarkt",
-          "elo",
-          "api_football",
-          "football_data",
-          "bookmakers",
-          "weather",
-          "injuries"
+          "transfermarkt"
         ]
       },
-      "odds": {
-        "home": 0,
-        "draw": 0,
-        "away": 0,
-        "trend": "pending"
-      },
-      "why": "Recommandation calculée avec les sources disponibles et les sources à connecter identifiées.",
+      "why": "Finale à recalculer dès que les finalistes sont connus.",
       "signals": [
-        "Sources tracées",
-        "Score recalculé",
-        "À vérifier avant MPP"
+        "Finalistes inconnus",
+        "À recalculer"
       ]
     }
   ]

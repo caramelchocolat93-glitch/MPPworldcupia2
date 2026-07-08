@@ -1,5 +1,5 @@
-# PREDIKT V9.2 — Source-Aware Engine
+# PREDIKT V10 — Clean Sources
 
-Ajouts : sources.json, écran Sources, source coverage par match, PREDIKT Score ajusté selon couverture sources.
+Statuts sources nettoyés : Connectée prochainement, API requise, Licence premium, Source secondaire, Source à valider.
 
 Fichiers : index.html, styles.css, app.js, engine.js, data.json, sources.json, README.md
